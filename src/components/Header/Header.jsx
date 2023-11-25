@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
+  const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
+
   const [hederColor, setHeaderColor] = useState("transparent");
   window.addEventListener("scroll", () => {
     let lastKnownScrollPosition = window.scrollY;
@@ -37,31 +40,66 @@ const Header = () => {
             tabIndex="0"
             className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content base-background rounded-box w-52"
           >
+            {isAuthenticated ? (
+              <li>
+                <NavLink to="/dashboard">
+                  <a>Profile</a>
+                </NavLink>
+              </li>
+            ) : (
+              <li>
+                <a>
+                  <button onClick={() => loginWithRedirect()}>Profile</button>
+                </a>
+              </li>
+            )}
+
             <li>
-              <NavLink to="/dashboard">
-                <a>Profile</a>
-              </NavLink>
-            </li>
-            <li>
-              <a href="" className="justify-between">
+              <a className="justify-between">
                 NFT
                 <span class="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300">
                   new
                 </span>
               </a>
             </li>
+
+            {isAuthenticated ? (
+              <li>
+                <a>Withdraw</a>
+              </li>
+            ) : (
+              <li>
+                <a>
+                  <button onClick={() => loginWithRedirect()}>Withdraw</button>
+                </a>
+              </li>
+            )}
+
             <li>
-              <a href="">Withdraw</a>
+              <a>Store</a>
             </li>
-            <li>
-              <a href="">Store</a>
-            </li>
-            <li>
-              <a href="">Settings</a>
-            </li>
-            <li>
-              <a href="">Logout</a>
-            </li>
+
+            {isAuthenticated ? (
+              <li>
+                <a>
+                  <button
+                    onClick={() =>
+                      logout({
+                        logoutParams: { returnTo: window.location.origin },
+                      })
+                    }
+                  >
+                    Log Out
+                  </button>
+                </a>
+              </li>
+            ) : (
+              <li>
+                <a>
+                  <button onClick={() => loginWithRedirect()}>Log In</button>
+                </a>
+              </li>
+            )}
           </ul>
         </div>
       </div>

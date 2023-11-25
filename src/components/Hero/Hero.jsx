@@ -1,8 +1,10 @@
 import React from "react";
 import "./Hero.css";
-import Cards from "../Cards/Cards";
+import { useAuth0 } from "@auth0/auth0-react";
 import { NavLink } from "react-router-dom";
 const Hero = () => {
+  const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
+
   return (
     <div id="hero">
       <div id="hero-container">
@@ -13,14 +15,27 @@ const Hero = () => {
           customer service. Assertively underwhelm idea-sharing for impactful
           solutions.
         </p>
-        <NavLink to="dashboard">
-        <button
-          className="text-2xl border-none text-white btn btn-accent"
-          style={{ backgroundColor: "#e80566" }}
-        >
-          Get Started Now
-        </button>
-        </NavLink>
+
+        {isAuthenticated ? (
+          <NavLink to="dashboard">
+            <button
+              className="text-2xl border-none text-white btn btn-accent"
+              style={{ backgroundColor: "#e80566" }}
+            >
+              Get Started Now
+            </button>
+          </NavLink>
+        ) : (
+          <NavLink to="dashboard">
+          <button
+            onClick={() => loginWithRedirect()}
+            className="text-2xl border-none text-white btn btn-accent"
+            style={{ backgroundColor: "#e80566" }}
+          >
+            Get Membership
+          </button>
+          </NavLink>
+        )}
       </div>
     </div>
   );
