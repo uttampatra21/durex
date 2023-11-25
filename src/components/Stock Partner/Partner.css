@@ -16,12 +16,8 @@
   font-size: 30px;
   line-height: 2;
 }
-#mr-que p {
-  font-size: 20px;
-  line-height: 1;
-  opacity: 0.6;
+#mr-que h3 {
   width: 80%;
-  padding-bottom: 20px;
 }
 .img {
   margin: 0 8px;
