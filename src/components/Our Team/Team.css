@@ -1,0 +1,25 @@
+#our-team h1 {
+  line-height: 3;
+}
+
+#team-card {
+  padding-top: 5vw;
+}
+
+@media only screen and (max-width: 800px) {
+  #our-team {
+    padding: 20px;
+  }
+  #our-team h1 {
+    line-height: 2;
+    font-size: 13vw;
+    font-weight: 500;
+  }
+  #our-team p{
+    font-size: 5vw;
+    line-height: 1.4;
+  }
+  #team-card {
+    padding-top: 15vw;
+  }
+}

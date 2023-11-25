@@ -1,0 +1,36 @@
+*::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: #1a2c79;
+  color: #000;
+  height: 50vh;
+  transition: 0.5s;
+}
+
+#header {
+  transition: 0.5s;
+  color: #fff;
+  box-shadow: 0px 6px 25px rgba(30, 10, 58, 0.08);
+  position: sticky;
+  top: 0rem;
+  z-index: 999;
+}
+
+.item-list {
+  display: none;
+}
+
+.base-background {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  gap: 10px;
+  color: #060f36;
+  
+}
+.base-background a {
+  font-weight: 500;
+  letter-spacing: .5px;
+}

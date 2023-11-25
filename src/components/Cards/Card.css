@@ -1,0 +1,42 @@
+#card {
+  background-color: transparent;
+  position: relative;
+  bottom: 5.5rem;
+}
+
+.item-radious {
+  border-radius: 25px;
+}
+
+.white-card {
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  box-shadow: 0px 6px 25px rgba(30, 10, 58, 0.08);
+}
+
+.white-card h1 {
+  font-size: 2vw !important;
+}
+
+.white-card p {
+  width: 70% !important;
+  font-size: 1.2rem !important;
+  line-height: 1.4 !important;
+}
+.news-card {
+  background-color: whitesmoke;
+}
+
+/* TEAM CARD */
+
+@media only screen and (max-width: 800px) {
+  #card-card {
+    gap: 20px;
+  }
+ 
+}
