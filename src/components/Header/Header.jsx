@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Header.css";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -37,8 +38,11 @@ const Header = () => {
             className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content base-background rounded-box w-52"
           >
             <li>
+              <a href="">Profile</a>
+            </li>
+            <li>
               <a href="" className="justify-between">
-                Profile
+                NFT
                 <span class="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300">
                   new
                 </span>
@@ -46,6 +50,9 @@ const Header = () => {
             </li>
             <li>
               <a href="">Withdraw</a>
+            </li>
+            <li>
+              <a href="">Store</a>
             </li>
             <li>
               <a href="">Settings</a>
