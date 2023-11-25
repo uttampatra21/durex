@@ -1,0 +1,166 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 1rem;
+  background-color: #1e293b;
+
+  .form__title {
+    margin-bottom: 0.5rem;
+  }
+
+  .form__description {
+    margin-bottom: 2rem;
+  }
+
+  .form__group {
+    position: relative;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form__input {
+    color: #7bdff6;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #cfd8dc;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-weight: inherit;
+    outline: none;
+    padding: 1.25rem;
+    background: none;
+
+    .form:hover {
+      border-color: #9dedff;
+    }
+
+    &:focus {
+      border-color: #7bdff6;
+    }
+  }
+
+  .form__label {
+    position: absolute;
+    left: 1rem;
+    top: 0.9rem;
+    padding: 0 0.5rem;
+    background-color: #1e293b;
+    color: #7bdff6;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  }
+
+  .form__button {
+    display: block;
+    margin-left: auto;
+    padding: 0.75rem 2rem;
+    background-color: #9dedff;
+    font-family: inherit;
+    font-weight: inherit;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+
+    .form:hover {
+      background-color: #7bdff6;
+    }
+  }
+}
+
+/* 
+1. When the input is in the focus state
+reduce the size of the label and move upwards 
+
+2. Keep label state when content is in input field 
+*/
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  left: 0.8rem;
+  font-size: 0.8rem;
+}
+
+#wallet {
+  height: 100vh;
+  background-color: #0f172a;
+}
+#wallet-nav {
+  background-color: black;
+  color: #fff;
+}
+
+#wallet-nav h1 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+#wallet-nav small {
+  padding: 0 3px;
+  font-size: 20px;
+}
+.arrow-down {
+  font-size: 19px;
+}
+#withdraw {
+  background-color: #1e293b;
+  overflow: hidden;
+  padding: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  #walet-cont {
+    
+    display: grid;
+    grid-template-columns: 30% 70%;
+    place-items: center;
+    gap: 1rem;
+  }
+  #wallet {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    background-color: #0f172a;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .bg-img {
+    padding: 25px;
+  }
+
+  #wallet-nav {
+    background-color: #0f172a;
+    padding: 1vw 0;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  #withdraw {
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    padding: 30px;
+    width: 100%;
+    background-color: #1e293b;
+  }
+}

@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Admin from "./components/Admin/Admin";
+import Wallet from "./components/Wallet/Wallet";
 function App() {
   return (
     <BrowserRouter>
@@ -43,6 +44,20 @@ function App() {
               <Header />
               <Dashboard />
               <Footer />
+            </>
+          }
+        />
+
+        {/* 
+        ------------ WALLET
+        */}
+        <Route
+          path="wallet"
+          element={
+            <>
+              <Header />
+              <Wallet />
+              <Footer/>
             </>
           }
         />

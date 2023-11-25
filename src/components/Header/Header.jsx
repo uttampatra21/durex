@@ -65,12 +65,14 @@ const Header = () => {
 
             {isAuthenticated ? (
               <li>
-                <a>Withdraw</a>
+                <NavLink to="/wallet">
+                  <a>Wallet</a>
+                </NavLink>
               </li>
             ) : (
               <li>
                 <a>
-                  <button onClick={() => loginWithRedirect()}>Withdraw</button>
+                  <button onClick={() => loginWithRedirect()}>Wallet</button>
                 </a>
               </li>
             )}
