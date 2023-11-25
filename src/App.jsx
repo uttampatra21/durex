@@ -3,6 +3,7 @@ import Home from "./components/Main/Home";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
+import Admin from "./components/Admin/Admin";
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +22,18 @@ function App() {
           }
         />
         {/* 
+        ----------ADMIN
+        */}
+        <Route
+          path="admin"
+          element={
+            <>
+              <Admin />
+            </>
+          }
+        />
+
+        {/* 
         ----------DASHBOARD
         */}
         <Route
@@ -28,7 +41,7 @@ function App() {
           element={
             <>
               <Header />
-              <Dashboard/>
+              <Dashboard />
               <Footer />
             </>
           }

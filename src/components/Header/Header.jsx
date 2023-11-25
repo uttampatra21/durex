@@ -38,7 +38,9 @@ const Header = () => {
             className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content base-background rounded-box w-52"
           >
             <li>
-              <a href="">Profile</a>
+              <NavLink to="/dashboard">
+                <a>Profile</a>
+              </NavLink>
             </li>
             <li>
               <a href="" className="justify-between">
