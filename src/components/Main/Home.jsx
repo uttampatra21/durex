@@ -5,6 +5,7 @@ import Bestqualityservices from "../BestQualityServices/Bestqualityservices";
 import LetestNews from "../Latest News/LetestNews";
 import Testomonial from "../Testomonial/Testomonial";
 import Team from "../Our Team/Team";
+import Partner from "../Stock Partner/Partner";
 
 const Home = () => {
   return (
@@ -13,10 +14,14 @@ const Home = () => {
       <Hero />
       {/* SERVICES */}
       <Services />
+      {/* TRADE PARTNER */}
+      <Partner />
+      
       {/* BEST QUALITY SERVICES */}
       <Bestqualityservices />
       {/* Our Latest News */}
       <LetestNews />
+      
       {/* TESTOMONIAL */}
       <Testomonial />
       {/* OUR TEAM */}

@@ -1,0 +1,34 @@
+#mr-que {
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#marque {
+  padding: 5px 0;
+}
+
+#mr-que h1 {
+  font-size: 30px;
+  line-height: 2;
+}
+#mr-que p {
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.6;
+  width: 80%;
+  padding-bottom: 20px;
+}
+.img {
+  margin: 0 8px;
+  padding: 10px 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+}
+.img img {
+  width: 120px;
+}
