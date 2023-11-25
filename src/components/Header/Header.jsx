@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [hederColor, setHeaderColor] = useState("transparent");
@@ -18,9 +19,11 @@ const Header = () => {
       style={{ backgroundColor: hederColor }}
     >
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl text-black" href="/">
-          <img width="120" src="/public/logo-white.png" />
-        </a>
+        <NavLink to="/">
+          <div className="btn btn-ghost text-xl text-black">
+            <img width="120" src="/public/logo.png" />
+          </div>
+        </NavLink>
       </div>
       <div className="flex-none gap-2">
         <div className="dropdown dropdown-end">
