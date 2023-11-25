@@ -25,7 +25,7 @@ const Header = () => {
       <div className="flex-1">
         <NavLink to="/">
           <div className="btn btn-ghost text-xl text-black">
-            <img width="130px" src="/public/logo.png" />
+            <img width="130px" src="/public/assets/logo.png" />
           </div>
         </NavLink>
       </div>
@@ -40,68 +40,51 @@ const Header = () => {
             tabIndex="0"
             className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content base-background rounded-box w-52"
           >
-            {isAuthenticated ? (
-              <li>
-                <NavLink to="/dashboard">
-                  <a>Profile</a>
-                </NavLink>
-              </li>
-            ) : (
-              <li>
-                <a>
-                  <button onClick={() => loginWithRedirect()}>Profile</button>
-                </a>
-              </li>
-            )}
-
             <li>
-              <a className="justify-between">
-                NFT
-                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300">
-                  new
-                </span>
-              </a>
+              <NavLink to="/dashboard">
+                <a>Dashboard</a>
+              </NavLink>
             </li>
 
-            {isAuthenticated ? (
+
+            
               <li>
                 <NavLink to="/wallet">
                   <a>Wallet</a>
                 </NavLink>
               </li>
-            ) : (
-              <li>
-                <a>
-                  <button onClick={() => loginWithRedirect()}>Wallet</button>
-                </a>
-              </li>
-            )}
+            
+             
+           
 
             <li>
-              <a>Store</a>
+              <NavLink to="/task">
+                <a className="justify-between">Task</a>
+              </NavLink>
             </li>
 
-            {isAuthenticated ? (
-              <li>
-                <a>
-                  <button
-                    onClick={() =>
-                      logout({
-                        logoutParams: { returnTo: window.location.origin },
-                      })
-                    }
-                  >
-                    Log Out
-                  </button>
-                </a>
-              </li>
-            ) : (
-              <li>
-                <a>
-                  <button onClick={() => loginWithRedirect()}>Log In</button>
-                </a>
-              </li>
-            )}
+
+            <li>
+              <a className="justify-between">
+                Store
+                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300">
+                  Upcoming
+                </span>
+              </a>
+            </li>
+
+
+            <li>
+              <a className="justify-between">
+                NFT
+                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300">
+                  Upcoming
+                </span>
+              </a>
+            </li>
+
+
+            
           </ul>
         </div>
       </div>
@@ -110,3 +93,25 @@ const Header = () => {
 };
 
 export default Header;
+
+// {isAuthenticated ? (
+//   <li>
+//     <a>
+//       <button
+//         onClick={() =>
+//           logout({
+//             logoutParams: { returnTo: window.location.origin },
+//           })
+//         }
+//       >
+//         Log Out
+//       </button>
+//     </a>
+//   </li>
+// ) : (
+//   <li>
+//     <a>
+//       <button onClick={() => loginWithRedirect()}>Log In</button>
+//     </a>
+//   </li>
+// )}

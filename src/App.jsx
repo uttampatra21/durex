@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Admin from "./components/Admin/Admin";
 import Wallet from "./components/Wallet/Wallet";
+import Task from "./components/Task/Task";
 function App() {
   return (
     <BrowserRouter>
@@ -57,7 +58,21 @@ function App() {
             <>
               <Header />
               <Wallet />
-              <Footer/>
+              <Footer />
+            </>
+          }
+        />
+
+        {/* 
+        ------------ WALLET
+        */}
+
+        <Route
+          path="task"
+          element={
+            <>
+              <Header />
+              <Task />
             </>
           }
         />

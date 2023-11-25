@@ -1,20 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Wallet.css";
 const Wallet = () => {
-  let waletValue = 1050;
+  let waletValue = 50;
+  let type = true;
   return (
     <div id="wallet">
       <div id="wallet-nav" className="">
         <div className="flex" id="walet-cont">
           <div className="bg-img">
-            <img src="/public/img/money.png" />
+            <img src="/public/assets/money.png" />
           </div>
 
           <div className="">
             <div className="">
               <h1 className="flex items-start pt-5">
                 <small>₹</small>
-                89,999.00
+                {waletValue}.00
               </h1>
               <div className="flex items-center gap-5">
                 <i className="bx arrow-down bxs-up-arrow"></i>{" "}
@@ -34,14 +35,14 @@ const Wallet = () => {
           <div class="form__group">
             <input
               required
-              min="1050"
+              min="500"
               type="number"
-              id="email"
+              id="amount"
               class="form__input"
-              placeholder="minimum ₹1050"
+              placeholder="minimum ₹500"
               autocomplete="off"
             />
-            <label for="email" class="form__label">
+            <label for="amount" class="form__label">
               Withdrawl Amount
             </label>
           </div>
@@ -77,11 +78,11 @@ const Wallet = () => {
             <input
               required
               type="text"
-              id="password"
+              id="phone"
               class="form__input"
               placeholder=" "
             />
-            <label for="password" class="form__label">
+            <label for="phone" class="form__label">
               Phone Number
             </label>
           </div>
@@ -90,11 +91,11 @@ const Wallet = () => {
             <input
               required
               type="text"
-              id="text"
+              id="pan"
               class="form__input"
               placeholder=" "
             />
-            <label for="password" class="form__label">
+            <label for="pan" class="form__label">
               Pan Number
             </label>
           </div>
@@ -103,11 +104,11 @@ const Wallet = () => {
             <input
               required
               type="text"
-              id="text"
+              id="account"
               class="form__input"
               placeholder=" "
             />
-            <label for="password" class="form__label">
+            <label for="account" class="form__label">
               Account Number
             </label>
           </div>
@@ -116,11 +117,11 @@ const Wallet = () => {
             <input
               required
               type="text"
-              id="text"
+              id="caccount"
               class="form__input"
               placeholder=" "
             />
-            <label for="password" class="form__label">
+            <label for="caccount" class="form__label">
               Confirm Account Number
             </label>
           </div>
@@ -129,11 +130,11 @@ const Wallet = () => {
             <input
               required
               type="text"
-              id="text"
+              id="ifsc"
               class="form__input"
               placeholder=" "
             />
-            <label for="password" class="form__label">
+            <label for="ifsc" class="form__label">
               IFSC
             </label>
           </div>
@@ -142,18 +143,20 @@ const Wallet = () => {
             <input
               required
               type="text"
-              id="text"
+              id="user"
               class="form__input"
               placeholder=" "
             />
-            <label for="password" class="form__label">
+            <label for="user" class="form__label">
               User Code
             </label>
           </div>
 
           <button
             disabled
-            style={{ textDecoration: "line-through" }}
+            style={{
+              textDecoration: waletValue === 500 ? "auto" : "line-through",
+            }}
             class="form__button font-bold"
           >
             Withdraw

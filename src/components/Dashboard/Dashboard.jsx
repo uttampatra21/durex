@@ -11,36 +11,37 @@ const Dashboard = () => {
               <li>
                 <i class="bx bx-calendar-check"></i>
                 <span class="info">
-                  <h3>1,074</h3>
-                  <p>Paid Order</p>
+                  <h3>₹20,00</h3>
+                  <p>Task Income</p>
                 </span>
               </li>
               <li>
                 <i class="bx bx-show-alt"></i>
                 <span class="info">
-                  <h3>3,944</h3>
-                  <p>Site Visit</p>
+                  <h3>₹100,00</h3>
+                  <p>Referral Income</p>
                 </span>
               </li>
               <li>
                 <i class="bx bx-line-chart"></i>
                 <span class="info">
-                  <h3>14,721</h3>
-                  <p>Searches</p>
+                  <h3>04</h3>
+                  <p>Referral</p>
                 </span>
               </li>
               <li>
                 <i class="bx bx-dollar-circle"></i>
                 <span class="info">
-                  <h3>$6,742</h3>
-                  <p>Total Sales</p>
+                  <h3>₹600,00</h3>
+                  <p>Total Income</p>
                 </span>
               </li>
             </ul>
             {/* <!-- End of Insights --> */}
 
             <div class="bottom-data">
-              <div class="orders">
+
+              {/* <div class="orders">
                 <div class="header">
                   <i class="bx bx-receipt"></i>
                   <h3>Recent Orders</h3>
@@ -88,7 +89,7 @@ const Dashboard = () => {
                     </tr>
                   </tbody>
                 </table>
-              </div>
+              </div> */}
 
               {/* <!-- Reminders --> */}
               <div class="reminders">
@@ -102,7 +103,7 @@ const Dashboard = () => {
                   <li class="completed">
                     <div class="task-title">
                       <i class="bx bx-check-circle"></i>
-                      <p>Start Our Meeting</p>
+                      <p>Complete Your Task</p>
                     </div>
                     <i class="bx bx-dots-vertical-rounded"></i>
                   </li>
@@ -113,13 +114,15 @@ const Dashboard = () => {
                     </div>
                     <i class="bx bx-dots-vertical-rounded"></i>
                   </li>
-                  <li class="not-completed">
+
+                  {/* <li class="not-completed">
                     <div class="task-title">
                       <i class="bx bx-x-circle"></i>
                       <p>Play Footbal</p>
                     </div>
                     <i class="bx bx-dots-vertical-rounded"></i>
-                  </li>
+                  </li> */}
+
                 </ul>
               </div>
 
