@@ -28,7 +28,7 @@ function App() {
         ----------ADMIN
         */}
         <Route
-          path="admin"
+          path="/admin"
           element={
             <>
               <Admin />
@@ -40,7 +40,7 @@ function App() {
         ----------DASHBOARD
         */}
         <Route
-          path="dashboard"
+          path="/dashboard"
           element={
             <>
               <Header />
@@ -54,7 +54,7 @@ function App() {
         ------------ WALLET
         */}
         <Route
-          path="wallet"
+          path="/wallet"
           element={
             <>
               <Header />
@@ -69,7 +69,7 @@ function App() {
         */}
 
         <Route
-          path="task"
+          path="/task"
           element={
             <>
               <Header />
@@ -84,7 +84,7 @@ function App() {
         */}
 
         <Route
-          path="refferal"
+          path="/refferal"
           element={
             <>
               <Header />
