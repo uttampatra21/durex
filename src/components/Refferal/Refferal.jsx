@@ -7,7 +7,7 @@ const Refferal = () => {
         <div class="form-box">
           <div class="form-value">
             <form action="">
-              <h2>Create Account</h2>
+              <h2 className="text-white text-2xl">Create Account</h2>
 
               <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
