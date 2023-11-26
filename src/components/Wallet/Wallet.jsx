@@ -17,10 +17,6 @@ const Wallet = () => {
                 <small>₹</small>
                 {waletValue}.00
               </h1>
-              <div className="flex items-center gap-5">
-                <i className="bx arrow-down bxs-up-arrow"></i>{" "}
-                <span>₹25 Today's Income</span>
-              </div>
             </div>
             <div className="flex gap-3 py-10">
               <button class="btn btn-outline btn-warning">Buy Stocks</button>
