@@ -8,7 +8,7 @@ const Wallet = () => {
       <div id="wallet-nav" className="">
         <div className="flex" id="walet-cont">
           <div className="bg-img">
-            <img src="/public/money.png" />
+            <img src="https://github.com/uttampatra21/public/raw/main/money.png" />
           </div>
 
           <div className="">
