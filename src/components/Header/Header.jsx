@@ -22,7 +22,7 @@ const Header = () => {
       <div className="flex-1">
         <NavLink to="/">
           <div className="btn btn-ghost text-xl text-black">
-            <img width="130px" src="/public/assets/logo.png" />
+            <img width="130px" src="/public/logo.png" />
           </div>
         </NavLink>
       </div>

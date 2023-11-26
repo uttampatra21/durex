@@ -1,6 +1,5 @@
 import React from "react";
 import "./Task.css";
-import { IoIosMore } from "react-icons/io";
 import { FcNeutralTrading } from "react-icons/fc";
 import { SiTemporal } from "react-icons/si";
 const Task = () => {

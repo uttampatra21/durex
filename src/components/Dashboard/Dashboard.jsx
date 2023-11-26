@@ -1,5 +1,6 @@
 import React from "react";
 import "./Dashboard.css";
+import { FaUsers } from "react-icons/fa6";
 const Dashboard = () => {
   return (
     <>
@@ -42,9 +43,8 @@ const Dashboard = () => {
             <div class="bottom-data">
               <div class="orders">
                 <div class="header">
-                  <i class="bx bx-receipt"></i>
+                <FaUsers />
                   <h3>Refferal User</h3>
-                  <i class="bx bx-filter"></i>
                   <i class="bx bx-search"></i>
                 </div>
                 <table>
