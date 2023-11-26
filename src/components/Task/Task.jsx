@@ -12,27 +12,12 @@ const Task = () => {
           New
         </p>
       </div>
-      <div className="">
-        <div className="date-item">
-          <div className="items">
-            10 <sapn className="date">Oct</sapn>
-          </div>
-          <div className="items activ">
-            11 <sapn className="date">Oct</sapn>
-          </div>
-          <div className="items activ">
-            12 <sapn className="date">Oct</sapn>
-          </div>
-          <div className="items activ">
-            13 <sapn className="date">Oct</sapn>
-          </div>
-        </div>
-      </div>
+      
 
       <div id="task-bar">
-        <div className="flex justify-between">
-          <h3 className="text-2xl font-bold opacity-80">Task</h3>
-          <IoIosMore className="text-4xl" />
+        <div className="flex justify-between items-center">
+          <h3 className="text-2xl text-white font-bold opacity-80">Task</h3>
+          <img width="70" src="https://i.pinimg.com/originals/02/1b/0c/021b0c44bd101306f1f2b1286ed431d1.gif" alt="" />
         </div>
 
         <div id="task-video" className="">
@@ -42,10 +27,10 @@ const Task = () => {
             </div>
             <div className="flex justify-between w-full p-5 items-center">
               <div className="">
-                <h2>
+                <h3>
                   <strong> Bitcoin</strong>
-                </h2>
-                <p>Cryptocurrency</p>
+                </h3>
+                <small>Cryptocurrency</small>
               </div>
               <div className="">
                 <SiTemporal className="text-2xl" />
@@ -59,10 +44,10 @@ const Task = () => {
             </div>
             <div className="flex justify-between w-full p-5 items-center">
               <div className="">
-                <h2>
+                <h3>
                   <strong> Bitcoin</strong>
-                </h2>
-                <p>Cryptocurrency</p>
+                </h3>
+                <small>Cryptocurrency</small>
               </div>
               <div className="">
                 <SiTemporal className="text-2xl" />
@@ -76,10 +61,10 @@ const Task = () => {
             </div>
             <div className="flex justify-between w-full p-5 items-center">
               <div className="">
-                <h2>
+                <h3>
                   <strong> Bitcoin</strong>
-                </h2>
-                <p>Cryptocurrency</p>
+                </h3>
+                <small>Cryptocurrency</small>
               </div>
               <div className="">
                 <SiTemporal className="text-2xl" />
@@ -93,10 +78,10 @@ const Task = () => {
             </div>
             <div className="flex justify-between w-full p-5 items-center">
               <div className="">
-                <h2>
+                <h3>
                   <strong> Bitcoin</strong>
-                </h2>
-                <p>Cryptocurrency</p>
+                </h3>
+                <small>Cryptocurrency</small>
               </div>
               <div className="">
                 <SiTemporal className="text-2xl" />

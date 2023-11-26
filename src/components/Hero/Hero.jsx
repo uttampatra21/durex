@@ -26,7 +26,7 @@ const Hero = () => {
             </button>
           </NavLink>
         ) : (
-          <NavLink to="dashboard">
+          <>
           <button
             onClick={() => loginWithRedirect()}
             className="text-2xl border-none text-white btn btn-accent"
@@ -34,7 +34,7 @@ const Hero = () => {
           >
             Get Membership
           </button>
-          </NavLink>
+          </>
         )}
       </div>
     </div>

@@ -37,10 +37,34 @@ const Partner = () => {
           <div className="img">
             <img src="https://listcarbrands.com/wp-content/uploads/2017/11/logo-Mahindra.jpg" />
           </div>
+          <div className="img">
+            <img src="https://www.marketing91.com/wp-content/uploads/2018/01/SWOT-analysis-of-Adani-Group-2.jpg" />
+          </div>
+          <div className="img">
+            <img src="https://logo-logos.com/2016/10/HDFC_Bank_logo.png" />
+          </div>
+          <div className="img">
+            <img src="https://stoxbox.in/wp-content/uploads/2023/07/mankind-logo.png" />
+          </div>
+          <div className="img">
+            <img src="https://download.logo.wine/logo/American_Honda_Motor_Company/American_Honda_Motor_Company-Logo.wine.png" />
+          </div>
         </Marquee>
       </div>
       <div id="marque">
         <Marquee play direction="right">
+          <div className="img">
+            <img src="https://inkbotdesign.com/wp-content/uploads/2012/09/Ford-Logo-Design.png" />
+          </div>
+          <div className="img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Bitcoin_logo.svg/1200px-Bitcoin_logo.svg.png" />
+          </div>
+          <div className="img">
+            <img src="https://data.alibabagroup.com/ecms-files/886024452/296d05a1-c52a-4f5e-abf2-0d49d4c0d6b3.png" />
+          </div>
+          <div className="img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/ICICI_Bank_Logo.svg/2560px-ICICI_Bank_Logo.svg.png" />
+          </div>
           <div className="img">
             <img src="https://1000logos.net/wp-content/uploads/2021/10/Meta-Logo.png" />
           </div>
@@ -55,6 +79,9 @@ const Partner = () => {
           </div>
           <div className="img">
             <img src="https://logos-world.net/wp-content/uploads/2020/04/Samsung-Logo-2005-present.jpg" />
+          </div>
+          <div className="img">
+            <img src="https://images.crowdspring.com/blog/wp-content/uploads/2023/07/03162944/amazon-logo-1.png" />
           </div>
         </Marquee>
       </div>

@@ -6,6 +6,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Admin from "./components/Admin/Admin";
 import Wallet from "./components/Wallet/Wallet";
 import Task from "./components/Task/Task";
+import Refferal from "./components/Refferal/Refferal";
 function App() {
   return (
     <BrowserRouter>
@@ -73,6 +74,22 @@ function App() {
             <>
               <Header />
               <Task />
+              <Footer/>
+            </>
+          }
+        />
+
+        {/* 
+        ------------ Refferal
+        */}
+
+        <Route
+          path="refferal"
+          element={
+            <>
+              <Header />
+              <Refferal />
+              <Footer />
             </>
           }
         />

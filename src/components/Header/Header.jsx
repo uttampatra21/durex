@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
-  const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
-
   const [hederColor, setHeaderColor] = useState("transparent");
   window.addEventListener("scroll", () => {
     let lastKnownScrollPosition = window.scrollY;
@@ -36,6 +33,7 @@ const Header = () => {
               <i className="text-3xl bx bx-menu"></i>
             </div>
           </label>
+
           <ul
             tabIndex="0"
             className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content base-background rounded-box w-52"
@@ -46,16 +44,11 @@ const Header = () => {
               </NavLink>
             </li>
 
-
-            
-              <li>
-                <NavLink to="/wallet">
-                  <a>Wallet</a>
-                </NavLink>
-              </li>
-            
-             
-           
+            <li>
+              <NavLink to="/wallet">
+                <a>Wallet</a>
+              </NavLink>
+            </li>
 
             <li>
               <NavLink to="/task">
@@ -63,6 +56,11 @@ const Header = () => {
               </NavLink>
             </li>
 
+            <li>
+              <NavLink to="/refferal">
+                <a className="justify-between">Refferal</a>
+              </NavLink>
+            </li>
 
             <li>
               <a className="justify-between">
@@ -73,18 +71,20 @@ const Header = () => {
               </a>
             </li>
 
-
             <li>
               <a className="justify-between">
-                NFT
+                Bitcoin
                 <span class="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300">
                   Upcoming
                 </span>
               </a>
             </li>
 
-
-            
+            <li>
+              <a>
+                <button>Log In</button>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -93,25 +93,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// {isAuthenticated ? (
-//   <li>
-//     <a>
-//       <button
-//         onClick={() =>
-//           logout({
-//             logoutParams: { returnTo: window.location.origin },
-//           })
-//         }
-//       >
-//         Log Out
-//       </button>
-//     </a>
-//   </li>
-// ) : (
-//   <li>
-//     <a>
-//       <button onClick={() => loginWithRedirect()}>Log In</button>
-//     </a>
-//   </li>
-// )}
