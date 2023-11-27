@@ -36,6 +36,14 @@ const Signup = () => {
 
               <div class="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" required name="Refferal Name" />
+                <label className="label" for="">
+                  Refferal Name
+                </label>
+              </div>
+
+              <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
                 <input type="text" required name="Your Name" />
                 <label className="label" for="">
                   Your Name

@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const dailyTaskSlice = createSlice({
   name: "taskincome",
-  initialState: 1.,
+  initialState: 10,
   reducers: {
     dailytask: (state, action) => {
       return state;
