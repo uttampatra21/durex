@@ -121,7 +121,7 @@ body.dark {
 
 .content main .bottom-data > div {
   border-radius: 20px;
-  background: #1b2b4f;;
+  background: #1b2b4f;
   padding: 24px;
   overflow-x: auto;
 }
@@ -134,7 +134,7 @@ body.dark {
 }
 
 .content main .bottom-data .header h3 {
-  margin-right: auto;
+  margin-right: 15px;
   font-size: 24px;
   font-weight: 600;
 }
@@ -184,7 +184,7 @@ body.dark {
 }
 
 .content main .bottom-data .orders table tbody tr:hover {
-  background: var(--grey);
+  background: rgb(16, 26, 64);
 }
 
 .content main .bottom-data .orders table tr td .status {

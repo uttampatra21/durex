@@ -67,14 +67,22 @@ const Wallet = () => {
           <h3 class="text-md mb-5 font-light text-white px-4">
             Our global payment partners constantly giving seamless withdrawl
             experience. Additionally we are providing{" "}
-            <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+            <span class="text-lg leading-none italic font-bold text-cyan-500 mr-1">
               "
             </span>
-            <span className="px-1.5" style={{borderBottom:"2px solid rgb(6 182 212)", borderRadius:"10px", paddingBottom:"3px" }}>no payment charges</span>
-            <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+            <span
+              className="px-1.5"
+              style={{
+                borderBottom: "2px solid rgb(6 182 212)",
+                borderRadius: "10px",
+                paddingBottom: "3px",
+              }}
+            >
+              no payment charges
+            </span>
+            <span class="text-lg leading-none italic font-bold text-cyan-500 mr-1">
               "
             </span>
-            .
           </h3>
           <div class="text-center mb-10">
             <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>

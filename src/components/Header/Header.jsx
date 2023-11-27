@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 const Header = () => {
   const userLogin = useSelector((store) => store.adminPage);
   let userPassword = 0;
-  
+
   if (
     (userLogin.id1 == "AXZYU09342GDGG" &&
       userLogin.password1 == "aw90xe3bhx2") ||
@@ -93,6 +93,12 @@ const Header = () => {
               </li>
 
               <li>
+                <NavLink to="/activation">
+                  <a className="justify-between">Activation</a>
+                </NavLink>
+              </li>
+
+              <li>
                 <NavLink to="/refferal">
                   <a className="justify-between">Refferal</a>
                 </NavLink>
@@ -127,30 +133,6 @@ const Header = () => {
               tabIndex="0"
               className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content base-background rounded-box w-52"
             >
-              <li>
-                <NavLink to="/login">
-                  <a>Dashboard</a>
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink to="/login">
-                  <a>Wallet</a>
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink to="/login">
-                  <a className="justify-between">Task</a>
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink to="/login">
-                  <a className="justify-between">Refferal</a>
-                </NavLink>
-              </li>
-
               <li>
                 <a className="justify-between">
                   Store

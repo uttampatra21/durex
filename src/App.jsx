@@ -3,7 +3,7 @@ import Home from "./components/Main/Home";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
-import Admin from "./components/Admin/Admin";
+import Admin from "./components/Activation/Activation";
 import Wallet from "./components/Wallet/Wallet";
 import Task from "./components/Task/Task";
 import Refferal from "./components/Refferal/Refferal";
@@ -12,6 +12,7 @@ import Signup from "./components/Signup/Signup";
 import RWithdraw from "./components/RWithdraw/RWithdraw";
 import TWithdraw from "./components/TWithdraw/TWithdraw";
 import Payment from "./components/Payment Us/Payment";
+import Activation from "./components/Activation/Activation";
 function App() {
   return (
     <BrowserRouter>
@@ -43,6 +44,16 @@ function App() {
             <>
               <Header />
               <Signup />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/activation"
+          element={
+            <>
+              <Header />
+              <Activation />
               <Footer />
             </>
           }

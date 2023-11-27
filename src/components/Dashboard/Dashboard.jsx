@@ -1,38 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Dashboard.css";
 import { FaUsers } from "react-icons/fa6";
 const Dashboard = () => {
+  const userData = [
+    {
+      id: 122,
+      user: "Uttam Patra",
+      status: "Pending",
+      className: "pending",
+    },
+    {
+      id: 132,
+      user: "Manotosh Maity",
+      status: "Completed",
+      className: "completed",
+    },
+    {
+      id: 142,
+      user: "Nirmal Mandal",
+      status: "Completed",
+      className: "completed",
+    },
+  ];
+
+  const [dNone, setNone] = useState("none");
+  const searchDisplay = () => {
+    setNone("block");
+  };
+
+  const searchValue = () => {};
+
+  let data = userData.map((x) => {
+    return (
+      <tr>
+        <td>
+          <p>{x.user}</p>
+        </td>
+        <td>
+          <span className={`status ${x.className}`}>{x.status}</span>
+        </td>
+      </tr>
+    );
+  });
+  // const searchValue = (e) => {
+  //   let value = e.target.value;
+  //   let searchValue = value.toUpperCase();
+  //   console.log(searchValue);
+  // };
+
   return (
     <>
       <div id="dashboard">
-        <div class="content">
+        <div className="content">
           <main>
             {/* <!-- Insights --> */}
-            <ul class="insights">
+            <ul className="insights">
               <li>
-                <i class="bx bx-calendar-check"></i>
-                <span class="info">
+                <i className="bx bx-calendar-check"></i>
+                <span className="info">
                   <h3>₹20,00</h3>
                   <p>Task Income</p>
                 </span>
               </li>
               <li>
-                <i class="bx bx-show-alt"></i>
-                <span class="info">
+                <i className="bx bx-show-alt"></i>
+                <span className="info">
                   <h3>₹100,00</h3>
                   <p>Referral Income</p>
                 </span>
               </li>
               <li>
-                <i class="bx bx-line-chart"></i>
-                <span class="info">
+                <i className="bx bx-line-chart"></i>
+                <span className="info">
                   <h3>04</h3>
                   <p>Referral</p>
                 </span>
               </li>
               <li>
-                <i class="bx bx-dollar-circle"></i>
-                <span class="info">
+                <i className="bx bx-dollar-circle"></i>
+                <span className="info">
                   <h3>₹600,00</h3>
                   <p>Total Income</p>
                 </span>
@@ -40,55 +86,38 @@ const Dashboard = () => {
             </ul>
             {/* <!-- End of Insights --> */}
 
-            <div class="bottom-data">
-              <div class="orders">
-                <div class="header">
-                <FaUsers />
+            <div className="bottom-data">
+              <div className="orders">
+                <div className="header flex items-center">
+                  <FaUsers />
                   <h3>Refferal User</h3>
-                  <i class="bx bx-search"></i>
+                  <div className="flex items-center">
+                    <input
+                      onChange={(e) => searchValue(e)}
+                      type="text"
+                      id="search"
+                      className=" w-20 border-none outline-none"
+                      style={{ backgroundColor: "transparent", display: dNone }}
+                    />
+                    <label
+                      onClick={searchDisplay}
+                      htmlFor="search"
+                      className="flex items-center mt-1"
+                    >
+                      <i className="bx bx-search "></i>
+                    </label>
+                  </div>
                 </div>
                 <table>
                   <thead>
                     <tr>
                       <th>User</th>
-                      <th>Join Date</th>
                       <th>Status</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <p>Manomosh Maity</p>
-                      </td>
-                      <td>10-03-2023</td>
-                      <td>
-                        <span class="status pending">Pending</span>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <p>Uttam Patra</p>
-                      </td>
-                      <td>19-09-2023</td>
-                      <td>
-                        <span class="status completed">Completed</span>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <p>Nirmal Mandal</p>
-                      </td>
-                      <td>25-07-2023</td>
-                      <td>
-                        <span class="status completed">Completed</span>
-                      </td>
-                    </tr>
-                  </tbody>
+                  <tbody>{data}</tbody>
                 </table>
               </div>
-
             </div>
           </main>
         </div>
