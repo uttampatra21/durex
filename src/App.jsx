@@ -120,6 +120,15 @@ function App() {
             </>
           }
         />
+
+        <Route
+          path="*"
+          element={
+            <>
+              <Header />
+            </>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
