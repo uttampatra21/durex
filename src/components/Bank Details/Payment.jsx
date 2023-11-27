@@ -1,19 +1,25 @@
 import React from "react";
 
-const Payment = () => {
+const Payment = ({
+  minimum,
+  placeholder,
+  paytm,
+  IFSC,
+  account,
+  confirmaccount,
+}) => {
   return (
     <div>
       <div id="withdraw">
         <form action="" class="form">
-         
           <div class="form__group">
             <input
               required
-              min="500"
+              min={minimum}
               type="number"
               id="amount"
               class="form__input"
-              placeholder="minimum ₹500"
+              placeholder={placeholder}
               autocomplete="off"
             />
             <label for="amount" class="form__label">
@@ -31,7 +37,7 @@ const Payment = () => {
               autocomplete="off"
             />
             <label for="email" class="form__label">
-              Username
+              Full Name
             </label>
           </div>
 
@@ -61,18 +67,10 @@ const Payment = () => {
             </label>
           </div>
 
-          <div class="form__group">
-            <input
-              required
-              type="text"
-              id="pan"
-              class="form__input"
-              placeholder=" "
-            />
-            <label for="pan" class="form__label">
-              Pan Number
-            </label>
-          </div>
+          {paytm}
+          {account}
+          {confirmaccount}
+          {IFSC}
 
           <button disabled class="form__button font-bold">
             Withdraw

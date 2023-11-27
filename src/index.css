@@ -1,6 +1,9 @@
 *::-webkit-scrollbar {
   display: none;
 }
+*::selection {
+  user-select: none;
+}
 body {
   background-color: #1a2c79;
   color: #000;

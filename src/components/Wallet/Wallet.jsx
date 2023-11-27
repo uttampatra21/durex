@@ -5,6 +5,9 @@ import { NavLink } from "react-router-dom";
 const Wallet = () => {
   let waletValue = 50;
   let type = true;
+  let task = 500;
+  let refferal = 100;
+
   return (
     <div id="wallet">
       <div id="wallet-nav" className="">
@@ -15,7 +18,17 @@ const Wallet = () => {
 
           <div className="">
             <div className="flex flex-col justify-between gap-5 py-5">
-              <NavLink to="/tWithdraw">
+              {task >= 500 ? (
+                <NavLink to="/tWithdraw">
+                  <button class="btn w-full btn-outline btn-warning ">
+                    Task Income{" "}
+                    <h1 className="flex items-start ">
+                      <small>₹</small>
+                      {waletValue}.00
+                    </h1>
+                  </button>
+                </NavLink>
+              ) : (
                 <button class="btn w-full btn-outline btn-warning ">
                   Task Income{" "}
                   <h1 className="flex items-start ">
@@ -23,9 +36,19 @@ const Wallet = () => {
                     {waletValue}.00
                   </h1>
                 </button>
-              </NavLink>
+              )}
 
-              <NavLink to="/rWithdraw">
+              {refferal >= 100 ? (
+                <NavLink to="/rWithdraw">
+                  <button class="btn btn-outline btn-accent">
+                    Refferal Income{" "}
+                    <h1 className="flex items-start ">
+                      <small>₹</small>
+                      {waletValue}.00
+                    </h1>
+                  </button>
+                </NavLink>
+              ) : (
                 <button class="btn btn-outline btn-accent">
                   Refferal Income{" "}
                   <h1 className="flex items-start ">
@@ -33,7 +56,7 @@ const Wallet = () => {
                     {waletValue}.00
                   </h1>
                 </button>
-              </NavLink>
+              )}
             </div>
           </div>
         </div>
@@ -75,7 +98,6 @@ const Wallet = () => {
           </li>
         </ul>
       </div>
-
     </div>
   );
 };

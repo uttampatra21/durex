@@ -10,6 +10,7 @@ import Refferal from "./components/Refferal/Refferal";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import RWithdraw from "./components/RWithdraw/RWithdraw";
+import TWithdraw from "./components/TWithdraw/TWithdraw";
 function App() {
   return (
     <BrowserRouter>
@@ -103,6 +104,8 @@ function App() {
           element={
             <>
               <Header />
+              <TWithdraw />
+              <Footer />
             </>
           }
         />
