@@ -1,8 +1,16 @@
-import React from "react";
+import { useState } from "react";
 import "./Signup.css";
 import { NavLink } from "react-router-dom";
 
 const Signup = () => {
+  const [lineThrough, setLineThrough] = useState("line-through");
+  const refferId = (e) => {
+    let refferValue = e.target.value;
+    refferValue.length > 12
+      ? setLineThrough("auto")
+      : setLineThrough("line-through");
+  };
+
   return (
     <div id="signup">
       <section className="section">
@@ -13,7 +21,14 @@ const Signup = () => {
 
               <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input className="input-input" type="text" required id="" />
+                <input
+                  onChange={(e) => refferId(e)}
+                  className="input-input"
+                  type="text"
+                  required
+                  id=""
+                  name="RefferId"
+                />
                 <label className="label" for="">
                   Refferal ID
                 </label>
@@ -21,7 +36,7 @@ const Signup = () => {
 
               <div class="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
-                <input type="text" required />
+                <input type="text" required name="Your Name" />
                 <label className="label" for="">
                   Your Name
                 </label>
@@ -29,7 +44,12 @@ const Signup = () => {
 
               <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input className="input-input" type="email" required />
+                <input
+                  className="input-input"
+                  type="email"
+                  required
+                  name="Email"
+                />
                 <label className="label" for="">
                   Email
                 </label>
@@ -37,7 +57,12 @@ const Signup = () => {
 
               <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input className="input-input" type="text" required />
+                <input
+                  className="input-input"
+                  type="text"
+                  required
+                  name="Phone Number"
+                />
                 <label className="label" for="">
                   Phone
                 </label>
@@ -45,13 +70,25 @@ const Signup = () => {
 
               <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input className="input-input" type="text" required />
+                <input
+                  className="input-input"
+                  type="text"
+                  required
+                  name="PAN Number"
+                />
                 <label className="label" for="">
                   PAN
                 </label>
               </div>
 
-              <button className="button">Sign Up</button>
+              <NavLink to="/payment">
+                <button
+                  className="button"
+                  style={{ textDecoration: lineThrough }}
+                >
+                  Next
+                </button>
+              </NavLink>
             </form>
           </div>
         </div>

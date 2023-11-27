@@ -11,6 +11,7 @@ import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import RWithdraw from "./components/RWithdraw/RWithdraw";
 import TWithdraw from "./components/TWithdraw/TWithdraw";
+import Payment from "./components/Payment Us/Payment";
 function App() {
   return (
     <BrowserRouter>
@@ -99,6 +100,7 @@ function App() {
             </>
           }
         />
+
         <Route
           path="/tWithdraw"
           element={
@@ -115,12 +117,21 @@ function App() {
           element={
             <>
               <Header />
-              <Refferal />
+              <Signup />
               <Footer />
             </>
           }
         />
 
+        <Route
+          path="/payment"
+          element={
+            <>
+              <Header />
+              <Payment />
+            </>
+          }
+        />
         <Route
           path="*"
           element={
