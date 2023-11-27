@@ -94,6 +94,7 @@ function App() {
             <>
               <Header />
               <RWithdraw />
+              <Footer />
             </>
           }
         />
