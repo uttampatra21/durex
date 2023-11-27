@@ -1,18 +1,12 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
+import dataSlice from "./slice/initalData";
+import adminSlice from "./slice/admin";
 
-const dataSlice = createSlice({
-  name: "task",
-
-  initialState: {},
-
-  reducers: {
-    smallReducerMthd: (state, action) => {},
+const corporxStore = configureStore({
+  reducer: {
+    mainData: dataSlice.reducer,
+    adminPage: adminSlice.reducer,
   },
 });
 
-const store = configureStore({
-  reducer: { task: dataSlice.reducer },
-});
-
-export const action = dataSlice.actions;
-export default store;
+export default corporxStore;

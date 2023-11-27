@@ -1,9 +1,9 @@
 import React from "react";
 import "./Hero.css";
-import { useAuth0 } from "@auth0/auth0-react";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 const Hero = () => {
-  const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
+  const admin = useSelector((store) => store.adminPage);
 
   return (
     <div id="hero">
@@ -16,8 +16,8 @@ const Hero = () => {
           solutions.
         </p>
 
-        {isAuthenticated ? (
-          <NavLink to="dashboard">
+        {admin === 10 ? (
+          <NavLink to="">
             <button
               className="text-2xl border-none text-white btn btn-accent"
               style={{ backgroundColor: "#e80566" }}
@@ -26,15 +26,14 @@ const Hero = () => {
             </button>
           </NavLink>
         ) : (
-          <>
-          <button
-            onClick={() => loginWithRedirect()}
-            className="text-2xl border-none text-white btn btn-accent"
-            style={{ backgroundColor: "#e80566" }}
-          >
-            Get Membership
-          </button>
-          </>
+          <NavLink to="/login">
+            <button
+              className="text-2xl border-none text-white btn btn-accent"
+              style={{ backgroundColor: "#e80566" }}
+            >
+              Join Now
+            </button>
+          </NavLink>
         )}
       </div>
     </div>

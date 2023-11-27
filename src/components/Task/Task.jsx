@@ -4,7 +4,7 @@ import { FcNeutralTrading } from "react-icons/fc";
 import { SiTemporal } from "react-icons/si";
 const Task = () => {
   return (
-    <div id="task">
+    <div id="task" className="my-6">
       <div id="task-heading" className="flex items-center justify-between">
         <h1 class="text-3xl md:text-2xl font-bold ">Oct, 2020</h1>
         <p className=" flex text-white items-center font-bold rounded-full py-2 px-5">

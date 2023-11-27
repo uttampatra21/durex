@@ -7,13 +7,13 @@ import Admin from "./components/Admin/Admin";
 import Wallet from "./components/Wallet/Wallet";
 import Task from "./components/Task/Task";
 import Refferal from "./components/Refferal/Refferal";
+import Login from "./components/Login/Login";
+import Signup from "./components/Signup/Signup";
+import RWithdraw from "./components/RWithdraw/RWithdraw";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* 
-        ----------HOME
-        */}
         <Route
           path="/"
           element={
@@ -24,9 +24,28 @@ function App() {
             </>
           }
         />
-        {/* 
-        ----------ADMIN
-        */}
+        <Route
+          path="/login"
+          element={
+            <>
+              <Header />
+              <Login />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route
+          path="/signup"
+          element={
+            <>
+              <Header />
+              <Signup />
+              <Footer />
+            </>
+          }
+        />
+
         <Route
           path="/admin"
           element={
@@ -36,9 +55,6 @@ function App() {
           }
         />
 
-        {/* 
-        ----------DASHBOARD
-        */}
         <Route
           path="/dashboard"
           element={
@@ -50,9 +66,17 @@ function App() {
           }
         />
 
-        {/* 
-        ------------ WALLET
-        */}
+        <Route
+          path="/task"
+          element={
+            <>
+              <Header />
+              <Task />
+              <Footer />
+            </>
+          }
+        />
+
         <Route
           path="/wallet"
           element={
@@ -64,24 +88,23 @@ function App() {
           }
         />
 
-        {/* 
-        ------------ WALLET
-        */}
-
         <Route
-          path="/task"
+          path="/rWithdraw"
           element={
             <>
               <Header />
-              <Task />
-              <Footer/>
+              <RWithdraw />
             </>
           }
         />
-
-        {/* 
-        ------------ Refferal
-        */}
+        <Route
+          path="/tWithdraw"
+          element={
+            <>
+              <Header />
+            </>
+          }
+        />
 
         <Route
           path="/refferal"

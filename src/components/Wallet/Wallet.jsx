@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { GiTakeMyMoney } from "react-icons/gi";
 import "./Wallet.css";
+import { NavLink } from "react-router-dom";
 const Wallet = () => {
   let waletValue = 50;
   let type = true;
@@ -12,21 +14,69 @@ const Wallet = () => {
           </div>
 
           <div className="">
-            <div className="">
-              <h1 className="flex items-start pt-5">
-                <small>₹</small>
-                {waletValue}.00
-              </h1>
-            </div>
-            <div className="flex gap-3 py-10">
-              <button class="btn btn-outline btn-warning">Buy Stocks</button>
-              <button class="btn btn-outline btn-accent">Buy Store</button>
+            <div className="flex flex-col justify-between gap-5 py-5">
+              <NavLink to='/tWithdraw'>
+              <button class="btn w-full btn-outline btn-warning ">
+                Task Income{" "}
+                <h1 className="flex items-start ">
+                  <small>₹</small>
+                  {waletValue}.00
+                </h1>
+              </button>
+              </NavLink>
+
+              <NavLink to="/rWithdraw">
+                <button class="btn btn-outline btn-accent">
+                  Refferal Income{" "}
+                  <h1 className="flex items-start ">
+                    <small>₹</small>
+                    {waletValue}.00
+                  </h1>
+                </button>
+              </NavLink>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="withdraw">
+      <div id="payment" className="py-5">
+        <div class="text-center flex flex-col items-center max-w-xl mx-auto">
+          <h1 class="text-3xl md:text-7xl font-bold mb-5 text-white">
+            Payment Partner
+          </h1>
+          <h3 class="text-md mb-5 font-light text-white px-4">
+            Make sure you are providing valid payment details. For more
+            information contact your local distributor.
+          </h3>
+          <div class="text-center mb-10">
+            <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>
+            <span class="inline-block w-3 h-1 rounded-full bg-emerald-500 ml-1"></span>
+            <span class="inline-block w-40 h-1 rounded-full bg-teal-500"></span>
+            <span class="inline-block w-3 h-1 rounded-full bg-cyan-500 ml-1"></span>
+            <span class="inline-block w-1 h-1 rounded-full bg-sky-500 ml-1"></span>
+          </div>
+        </div>
+
+        <ul id="meth-ul">
+          <li className="payment-meth">
+            <img src="https://www.mmaglobal.com/files/styles/member_logo_large/public/logos/phonepe_logo.png?itok=kQwv5E2X" />
+          </li>
+          <li className="payment-meth">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/2560px-Google_Pay_Logo.svg.png" />
+          </li>
+          <li className="payment-meth">
+            <img src="https://1000logos.net/wp-content/uploads/2021/03/Paytm_Logo.jpg" />
+          </li>
+          <li className="payment-meth">
+            <img src="https://getlogo.net/wp-content/uploads/2020/10/unified-payments-interface-upi-logo-vector.png" />
+          </li>
+          <li className="payment-meth">
+            <img src="https://nuvei.com/wp-content/uploads/2021/06/regular-bank-transfer.png" />
+          </li>
+        </ul>
+      </div>
+
+      {/* <div id="withdraw">
         <form action="" class="form">
           <div class="form__group">
             <input
@@ -158,7 +208,7 @@ const Wallet = () => {
             Withdraw
           </button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };
