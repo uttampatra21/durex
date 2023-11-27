@@ -15,14 +15,14 @@ const Wallet = () => {
 
           <div className="">
             <div className="flex flex-col justify-between gap-5 py-5">
-              <NavLink to='/tWithdraw'>
-              <button class="btn w-full btn-outline btn-warning ">
-                Task Income{" "}
-                <h1 className="flex items-start ">
-                  <small>₹</small>
-                  {waletValue}.00
-                </h1>
-              </button>
+              <NavLink to="/tWithdraw">
+                <button class="btn w-full btn-outline btn-warning ">
+                  Task Income{" "}
+                  <h1 className="flex items-start ">
+                    <small>₹</small>
+                    {waletValue}.00
+                  </h1>
+                </button>
               </NavLink>
 
               <NavLink to="/rWithdraw">
@@ -45,8 +45,8 @@ const Wallet = () => {
             Payment Partner
           </h1>
           <h3 class="text-md mb-5 font-light text-white px-4">
-            Make sure you are providing valid payment details. For more
-            information contact your local distributor.
+            Our global payment partners constantly giving seamless withdrawl
+            experience. Additionally we are providing no payment charges.
           </h3>
           <div class="text-center mb-10">
             <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>
