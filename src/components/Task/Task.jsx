@@ -3,8 +3,53 @@ import "./Task.css";
 import { FcNeutralTrading } from "react-icons/fc";
 import { SiTemporal } from "react-icons/si";
 const Task = () => {
+  const taskOne = () => {
+    setTimeout(() => {
+      window.location.href = "http://www.w3schools.com";
+    }, 5000);
+  };
+
+  const taskTwo = () => {
+    setTimeout(() => {}, 5000);
+  };
+
+  const taskThree = () => {
+    setTimeout(() => {}, 5000);
+  };
+
+  const taskFour = () => {
+    setTimeout(() => {}, 5000);
+  };
+
+  const loading = () => {
+    let cnt = 0;
+    let per = 0;
+    let red;
+    red = setInterval(() => {
+      let bar = document.querySelector(".progress");
+      let percentage = setInterval(() => {
+        per += 1;
+        if (per >= cnt) clearInterval(percentage);
+        document.querySelector(".text").innerHTML = `<p>${per}%</p>`;
+      }, 100);
+      cnt += 10;
+
+      if (cnt == 100) clearInterval(red);
+      bar.style.width = cnt + "%";
+      console.log(cnt);
+    }, 1000);
+  };
+  loading();
+
   return (
     <div id="task" className="my-6">
+      <div id="loadinng">
+        <img src="https://i.gifer.com/fyDw.gif" />
+        <div className="container">
+          <div className="progress"></div>
+        </div>
+        <div className="text"></div>
+      </div>
 
       <div id="task-bar">
         <div class="text-center flex flex-col items-center max-w-xl mx-auto">
@@ -32,7 +77,7 @@ const Task = () => {
         </div>
 
         <div id="task-video" className="">
-          <div className="item-status">
+          <div className="item-status" onClick={taskOne}>
             <div className="task-logo">
               <FcNeutralTrading className="text-4xl" />
             </div>
@@ -49,7 +94,7 @@ const Task = () => {
             </div>
           </div>
 
-          <div className="item-status">
+          <div className="item-status" onClick={taskTwo}>
             <div className="task-logo">
               <FcNeutralTrading className="text-4xl" />
             </div>
@@ -66,7 +111,7 @@ const Task = () => {
             </div>
           </div>
 
-          <div className="item-status">
+          <div className="item-status" onClick={taskThree}>
             <div className="task-logo">
               <FcNeutralTrading className="text-4xl" />
             </div>
@@ -83,7 +128,7 @@ const Task = () => {
             </div>
           </div>
 
-          <div className="item-status">
+          <div className="item-status" onClick={taskFour}>
             <div className="task-logo">
               <FcNeutralTrading className="text-4xl" />
             </div>

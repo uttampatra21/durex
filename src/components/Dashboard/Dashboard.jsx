@@ -72,14 +72,14 @@ const Dashboard = () => {
               <li>
                 <i className="bx bx-line-chart"></i>
                 <span className="info">
-                  <h3>04</h3>
+                  <h3>32</h3>
                   <p>Referral</p>
                 </span>
               </li>
               <li>
                 <i className="bx bx-dollar-circle"></i>
                 <span className="info">
-                  <h3>₹600,00</h3>
+                  <h3>4,200,00</h3>
                   <p>Total Income</p>
                 </span>
               </li>
