@@ -29,7 +29,7 @@ const Header = () => {
     (userLogin.id10 == "WSDS8833248LSDDLL" &&
       userLogin.password10 == "ddfghj2424580")
   ) {
-    userPassword = 101;
+    userPassword = 1001;
   } else {
     userPassword = 1001;
   }
@@ -153,7 +153,9 @@ const Header = () => {
 
               <li>
                 <a>
-                  <button>Log In</button>
+                  <NavLink to="/login">
+                    <button>Log In</button>
+                  </NavLink>
                 </a>
               </li>
             </ul>

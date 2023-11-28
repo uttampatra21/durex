@@ -5,6 +5,13 @@ import { useSelector } from "react-redux";
 const Wallet = () => {
   const taskincome = useSelector((store) => store.taskincome);
   const refferalincome = useSelector((store) => store.reffrailincome);
+
+  let date = new Date();
+  let hours = date.getMinutes();
+  let num = 0;
+  let mul = num + hours;
+  // console.log(mul);
+
   return (
     <div id="wallet">
       <div id="wallet-nav" className="">

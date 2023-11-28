@@ -4,17 +4,21 @@ import { useSelector } from "react-redux";
 import { useState } from "react";
 import UpiMethod from "../Payment Method/UpiMethod";
 import BANK from "../Payment Method/BANK";
+import { NavLink } from "react-router-dom";
 
 const Payment = () => {
   const paymentValue = useSelector((store) => store.paymentUs);
+
   if (paymentValue == 12) {
     console.log(12);
   } else {
     console.log(2);
   }
 
+  /*
+------------------------ METHODS
+*/
   const [method, setMethod] = useState(<UpiMethod />);
-
   const upi = () => {
     setMethod(<UpiMethod />);
   };
@@ -23,11 +27,38 @@ const Payment = () => {
     setMethod(<BANK />);
   };
 
+  /*
+------------------------ TRANS VALUE
+*/
+
+  const [transBtn, setTransBtn] = useState(
+    <button disabled>GET USER ID</button>
+  );
+  const transValue = (e) => {
+    let transVal = e.target.value;
+    let transLength = transVal.length;
+    if (transLength >= 10) {
+      setTransBtn(<button onClick={() => popup}>GET USER ID</button>);
+    } else {
+      setTransBtn(<button disabled>GET USER ID</button>);
+    }
+  };
+  /*
+------------------------ POP UP MESSEGE
+*/
+  const popup = () => {
+    alert();
+  };
+  // --------------- ONSUBMIT
+  const onsubmit = (e) => {
+    e.preventdefault();
+    alert();
+  };
   return (
     <div id="payment-us">
       <div className="wrapper">
         <h2>Payment</h2>
-        <form action="" method="post">
+        <form onSubmit={(e) => onsubmit(e)} method="post">
           {/* <!--Account Information Start--> */}
           <h4>Account</h4>
 
@@ -172,6 +203,7 @@ const Payment = () => {
 
           <div className="input_box">
             <input
+              onChange={(e) => transValue(e)}
               type="text"
               placeholder="Transaction Id"
               required
@@ -186,9 +218,7 @@ const Payment = () => {
           {/* <!--Payment Details End--> */}
 
           <div className="input_group">
-            <div className="input_box">
-              <button type="submit">PAY NOW</button>
-            </div>
+            <div className="input_box">{transBtn}</div>
           </div>
         </form>
       </div>
