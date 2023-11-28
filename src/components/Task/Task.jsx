@@ -1,24 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Task.css";
 import { FcNeutralTrading } from "react-icons/fc";
 import { SiTemporal } from "react-icons/si";
 const Task = () => {
+  const [loadingp, setLoading] = useState("none");
   const taskOne = () => {
+    setLoading("flex");
     setTimeout(() => {
       window.location.href = "http://www.w3schools.com";
     }, 5000);
   };
 
   const taskTwo = () => {
-    setTimeout(() => {}, 5000);
+    setLoading("flex");
+    setTimeout(() => {
+      window.location.href = "http://www.w3schools.com";
+    }, 5000);
+    
   };
 
   const taskThree = () => {
-    setTimeout(() => {}, 5000);
+    setLoading("flex");
+    setTimeout(() => {
+      window.location.href = "http://www.w3schools.com";
+    }, 5000);
   };
 
   const taskFour = () => {
-    setTimeout(() => {}, 5000);
+    setLoading("flex");
+    setTimeout(() => {
+      window.location.href = "http://www.w3schools.com";
+    }, 5000);
   };
 
   const loading = () => {
@@ -43,12 +55,14 @@ const Task = () => {
 
   return (
     <div id="task" className="my-6">
-      <div id="loadinng">
-        <img src="https://i.gifer.com/fyDw.gif" />
-        <div className="container">
-          <div className="progress"></div>
+      <div id="loadinng" style={{ display: loadingp }}>
+        <div className="p-display">
+          <img src="https://i.gifer.com/fyDw.gif" />
+          <div className="container">
+            <div className="progress"></div>
+          </div>
+          <div className="text"></div>
         </div>
-        <div className="text"></div>
       </div>
 
       <div id="task-bar">
