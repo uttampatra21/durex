@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const reffrailSlice = createSlice({
   name: "reffrailincome",
-  initialState: 1,
+  initialState: 100,
   reducers: {
     dailytask: (state, action) => {
       return state;

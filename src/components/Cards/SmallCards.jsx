@@ -23,14 +23,3 @@ const SmallCards = ({ bgColor, logo, white }) => {
 
 export default SmallCards;
 
-
-// id = [
-//   {
-//     id: "WEDSX12WERW123E",
-//     pass: "porgn243djwhgnc",
-//   },
-//   {
-//     id: "DKJFS131DDFJSLJ",
-//     pass: "dskldkj2342dksk",
-//   },
-// ];
