@@ -8,7 +8,7 @@ const SmallCards = ({ bgColor, logo, white }) => {
           className="border-2 flex flex-col gap-4 items-center px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110"
         >
           {logo}
-          <h2 className="title-font font-medium text-3xl">
+          <h2 id="service-id" className="title-font font-medium text-3xl">
             Customer Services
           </h2>
           <p className="leading-relaxed">
@@ -22,3 +22,15 @@ const SmallCards = ({ bgColor, logo, white }) => {
 };
 
 export default SmallCards;
+
+
+// id = [
+//   {
+//     id: "WEDSX12WERW123E",
+//     pass: "porgn243djwhgnc",
+//   },
+//   {
+//     id: "DKJFS131DDFJSLJ",
+//     pass: "dskldkj2342dksk",
+//   },
+// ];
