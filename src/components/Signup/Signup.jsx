@@ -1,14 +1,11 @@
 import { useState } from "react";
 import "./Signup.css";
 import { NavLink } from "react-router-dom";
-
 const Signup = () => {
-  const [lineThrough, setLineThrough] = useState("line-through");
+  const [displayNone, setLineThrough] = useState("none");
   const refferId = (e) => {
     let refferValue = e.target.value;
-    refferValue.length > 12
-      ? setLineThrough("auto")
-      : setLineThrough("line-through");
+    refferValue.length > 12 ? setLineThrough("block") : setLineThrough("none");
   };
 
   return (
@@ -90,10 +87,7 @@ const Signup = () => {
               </div>
 
               <NavLink to="/payment">
-                <button
-                  className="button"
-                  style={{ textDecoration: lineThrough }}
-                >
+                <button className="button" style={{ display: displayNone }}>
                   Next
                 </button>
               </NavLink>

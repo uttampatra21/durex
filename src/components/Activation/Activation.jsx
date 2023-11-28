@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Activation.css";
 import { NavLink } from "react-router-dom";
 const Activation = () => {
+  const [displayNone, setDisplayNone] = useState("none");
+  const refferal = (e) => {
+    let refferValue = e.target.value;
+    let refferValueLength = refferValue.length;
+    if (refferValueLength >= 12) {
+      setDisplayNone("block");
+    } else {
+      setDisplayNone("none");
+    }
+  };
+
   return (
     <div id="activation">
       <section id="section">
@@ -47,6 +58,7 @@ const Activation = () => {
               <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input
+                  onChange={(e) => refferal(e)}
                   className="input-input"
                   type="text"
                   required
@@ -83,7 +95,12 @@ const Activation = () => {
                 </label>
               </div>
 
-              <button className="button">Activate Account</button>
+              <NavLink to="/wallet">
+                {" "}
+                <button className="button" style={{ display: displayNone }}>
+                  Activate Account
+                </button>
+              </NavLink>
             </form>
           </div>
         </div>

@@ -7,30 +7,34 @@ const Task = () => {
   const taskOne = () => {
     setLoading("flex");
     setTimeout(() => {
-      window.location.href = "http://www.w3schools.com";
+      window.location.href =
+        "https://accounts.binance.com/en/register?ref=788565756&gclid=CjwKCAiAmZGrBhAnEiwAo9qHiR5eFazFeeU3CP9Ssv2EmOTgEwWWojeMkN2YUfbTMgxsb91VedflERoCvlkQAvD_BwE";
     }, 5000);
+    loading();
   };
 
   const taskTwo = () => {
     setLoading("flex");
     setTimeout(() => {
-      window.location.href = "http://www.w3schools.com";
+      window.location.href = "https://auth-x.crypto.com/users/sign_in";
     }, 5000);
-    
+    loading();
   };
 
   const taskThree = () => {
     setLoading("flex");
     setTimeout(() => {
-      window.location.href = "http://www.w3schools.com";
+      window.location.href = "https://solana.com/";
     }, 5000);
+    loading();
   };
 
   const taskFour = () => {
     setLoading("flex");
     setTimeout(() => {
-      window.location.href = "http://www.w3schools.com";
+      window.location.href = "https://www.bitmex.com/";
     }, 5000);
+    loading();
   };
 
   const loading = () => {
@@ -48,10 +52,8 @@ const Task = () => {
 
       if (cnt == 100) clearInterval(red);
       bar.style.width = cnt + "%";
-      console.log(cnt);
     }, 1000);
   };
-  loading();
 
   return (
     <div id="task" className="my-6">

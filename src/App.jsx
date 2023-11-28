@@ -140,6 +140,7 @@ function App() {
             <>
               <Header />
               <Payment />
+              <Footer />
             </>
           }
         />

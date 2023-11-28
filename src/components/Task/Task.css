@@ -5,6 +5,7 @@
   position: relative;
 }
 #loadinng {
+  padding: 10px;
   position: fixed;
   top: 0;
   left: 0;
