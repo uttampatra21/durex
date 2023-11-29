@@ -16,16 +16,15 @@ const Home = () => {
       <Services />
       {/* TRADE PARTNER */}
       <Partner />
-      
       {/* BEST QUALITY SERVICES */}
       <Bestqualityservices />
       {/* Our Latest News */}
-      <LetestNews />
-      
       {/* TESTOMONIAL */}
       <Testomonial />
       {/* OUR TEAM */}
       <Team />
+      {/* NEWS LETTER */}
+      
     </div>
   );
 };

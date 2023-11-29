@@ -1,27 +1,12 @@
 import React, { useState } from "react";
 import "./Dashboard.css";
 import { FaUsers } from "react-icons/fa6";
+
 const Dashboard = () => {
-  const userData = [
-    {
-      id: 122,
-      user: "Uttam Patra",
-      status: "Pending",
-      className: "pending",
-    },
-    {
-      id: 132,
-      user: "Manotosh Maity",
-      status: "Completed",
-      className: "completed",
-    },
-    {
-      id: 142,
-      user: "Nirmal Mandal",
-      status: "Completed",
-      className: "completed",
-    },
-  ];
+  const storgeData =
+    localStorage.getItem("userXdata") != null
+      ? JSON.parse(localStorage.getItem("userXdata"))
+      : [];
 
   const [dNone, setNone] = useState("none");
   const searchDisplay = () => {
@@ -30,23 +15,21 @@ const Dashboard = () => {
 
   const searchValue = () => {};
 
-  let data = userData.map((x) => {
+  let data = storgeData.reffer.map((x) => {
     return (
       <tr>
         <td>
-          <p>{x.user}</p>
+          <p>{x.username}</p>
         </td>
         <td>
-          <span className={`status ${x.className}`}>{x.status}</span>
+          <span className={`status ${x.class}`}>{x.status}</span>
         </td>
       </tr>
     );
   });
-  // const searchValue = (e) => {
-  //   let value = e.target.value;
-  //   let searchValue = value.toUpperCase();
-  //   console.log(searchValue);
-  // };
+
+  const d = new Date();
+  let taskIncome = d.getHours() - 4;
 
   return (
     <>
@@ -58,28 +41,28 @@ const Dashboard = () => {
               <li>
                 <i className="bx bx-calendar-check"></i>
                 <span className="info">
-                  <h3>₹20,00</h3>
+                  <h3>₹ {taskIncome},00</h3>
                   <p>Task Income</p>
                 </span>
               </li>
               <li>
                 <i className="bx bx-show-alt"></i>
                 <span className="info">
-                  <h3>₹100,00</h3>
+                  <h3>₹ {storgeData.refferalIncome},00</h3>
                   <p>Referral Income</p>
                 </span>
               </li>
               <li>
                 <i className="bx bx-line-chart"></i>
                 <span className="info">
-                  <h3>32</h3>
+                  <h3>{storgeData.reffer.length}</h3>
                   <p>Referral</p>
                 </span>
               </li>
               <li>
                 <i className="bx bx-dollar-circle"></i>
                 <span className="info">
-                  <h3>4,200,00</h3>
+                  <h3>₹ {storgeData.totalIncom},99</h3>
                   <p>Total Income</p>
                 </span>
               </li>

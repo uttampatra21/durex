@@ -3,7 +3,7 @@ const NewsCard = ({ img }) => {
   return (
     <div>
       <div className="overflow-hidden shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-5 hover:shadow-2xl rounded-lg h-90 w-72 md:w-72 cursor-pointer m-auto">
-        <div className="w-full block h-full">
+        <div className="w-60 block h-full">
           <img
             alt="blog photo"
             src={img}

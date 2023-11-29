@@ -44,6 +44,20 @@ const Payment = ({
           <div class="form__group">
             <input
               required
+              type="text"
+              id="userid"
+              class="form__input"
+              placeholder=" "
+              autocomplete="off"
+            />
+            <label for="userid" class="form__label">
+              User ID
+            </label>
+          </div>
+
+          <div class="form__group">
+            <input
+              required
               type="email"
               id="password"
               class="form__input"
@@ -51,6 +65,20 @@ const Payment = ({
             />
             <label for="password" class="form__label">
               Email
+            </label>
+          </div>
+
+          <div class="form__group">
+            <input
+              required
+              type="text"
+              id="pan"
+              class="form__input"
+              placeholder=" "
+              autocomplete="off"
+            />
+            <label for="pan" class="form__label">
+              PAN Number
             </label>
           </div>
 

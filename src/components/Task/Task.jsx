@@ -4,12 +4,18 @@ import { FcNeutralTrading } from "react-icons/fc";
 import { SiTemporal } from "react-icons/si";
 const Task = () => {
   const [loadingp, setLoading] = useState("none");
+  let dailyTaskVal = 0;
+  let newTaskVal = dailyTaskVal + 5;
+  let dailySumTask = dailyTaskVal + newTaskVal;
+
+  localStorage.setItem("dailySumTask", JSON.stringify(dailySumTask));
+
   const taskOne = () => {
     setLoading("flex");
-    setTimeout(() => {
-      window.location.href =
-        "https://accounts.binance.com/en/register?ref=788565756&gclid=CjwKCAiAmZGrBhAnEiwAo9qHiR5eFazFeeU3CP9Ssv2EmOTgEwWWojeMkN2YUfbTMgxsb91VedflERoCvlkQAvD_BwE";
-    }, 5000);
+    // setTimeout(() => {
+    //   window.location.href =
+    //     "https://accounts.binance.com/en/register?ref=788565756&gclid=CjwKCAiAmZGrBhAnEiwAo9qHiR5eFazFeeU3CP9Ssv2EmOTgEwWWojeMkN2YUfbTMgxsb91VedflERoCvlkQAvD_BwE";
+    // }, 5000);
     loading();
   };
 

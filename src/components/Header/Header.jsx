@@ -1,43 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-  const userLogin = useSelector((store) => store.adminPage);
-  let userPassword = 0;
-
-  if (
-    (userLogin.id1 == "AXZYU09342GDGG" &&
-      userLogin.password1 == "aw90xe3bhx2") ||
-    (userLogin.id2 == "WENK92HKBFCKAKJA" &&
-      userLogin.password2 == "kv2dkfdlf322") ||
-    (userLogin.id3 == "AJSHFS443JHFJSH" &&
-      userLogin.password3 == "fsdf24dfkjjkf") ||
-    (userLogin.id4 == "QEIJWIOJWW242SKD" &&
-      userLogin.password4 == "dkdsfeof24242kjf4") ||
-    (userLogin.id5 == "CSNKJFDI90E98FS" &&
-      userLogin.password5 == "kcjsdkfj32434xkcd") ||
-    (userLogin.id6 == "AKDDW352556GGY" &&
-      userLogin.password6 == "kvvs353kd34256dk") ||
-    (userLogin.id7 == "LKD5748DHFDKLSF" &&
-      userLogin.password7 == "kbn43433sflklsd") ||
-    (userLogin.id8 == "OFHC548645WKDDLS" &&
-      userLogin.password8 == "ss242cksdkl203") ||
-    (userLogin.id9 == "LDFO833HDJHDJA99" &&
-      userLogin.password9 == "sdjw232sdlk00990") ||
-    (userLogin.id10 == "WSDS8833248LSDDLL" &&
-      userLogin.password10 == "ddfghj2424580")
-  ) {
-    userPassword = 1001;
-  } else {
-    userPassword = 1001;
-  }
+  let userPassword = 101;
 
   const [hederColor, setHeaderColor] = useState("transparent");
   window.addEventListener("scroll", () => {
     let lastKnownScrollPosition = window.scrollY;
-
     if (lastKnownScrollPosition > 500) {
       setHeaderColor("rgb(23 37 100)");
     } else {
@@ -152,11 +123,11 @@ const Header = () => {
               </li>
 
               <li>
-                <a>
-                  <NavLink to="/login">
+                <NavLink to="/login">
+                  <a>
                     <button>Log In</button>
-                  </NavLink>
-                </a>
+                  </a>
+                </NavLink>
               </li>
             </ul>
           )}

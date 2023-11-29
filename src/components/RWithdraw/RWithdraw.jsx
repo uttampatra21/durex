@@ -59,7 +59,7 @@ const RWithdraw = () => {
               Confirm Account
             </label>
           </div>
-        }
+        } 
         IFSC={
           <div class="form__group">
             <input
@@ -88,13 +88,6 @@ const RWithdraw = () => {
           </div>
           <div class="">
             <div class="flex flex-col justify-between gap-5 py-5">
-              {/* <button class="btn w-full btn-outline btn-warning ">
-                Task Income{" "}
-                <h1 class="flex items-start ">
-                  <small>₹</small>50.00
-                </h1>
-              </button> */}
-
               <button class="btn btn-outline btn-accent">
                 Refferal Income{" "}
                 <h1 class="flex items-start ">

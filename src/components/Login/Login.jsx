@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 const Login = () => {
+  const userData = useSelector((store) => store.userData);
+
+  const [admin, setAdmin] = useState(
+    <button className="button">Log In</button>
+  );
+  const password = (e) => {
+    let pass = e.target.value;
+    userData.map((x) => {
+      if (pass == x.password) {
+        setAdmin(
+          <NavLink to="/dashboard">
+            <button className="button">Log In</button>
+          </NavLink>
+        );
+        localStorage.setItem("userXdata", JSON.stringify(x));
+        console.log(x);
+      }
+    });
+  };
+
   return (
     <div id="refferal">
       <section>
@@ -12,7 +34,7 @@ const Login = () => {
 
               <div class="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
-                <input type="text" required />
+                <input type="text" required onChange={(e) => userID(e)} />
                 <label className="label" for="">
                   User Id
                 </label>
@@ -20,13 +42,18 @@ const Login = () => {
 
               <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input className="input-input" type="password" required />
+                <input
+                  className="input-input"
+                  type="password"
+                  required
+                  onChange={(e) => password(e)}
+                />
                 <label className="label" for="">
                   Password
                 </label>
               </div>
 
-              <button className="button">Log In</button>
+              {admin}
             </form>
             <div className="sign-up py-10 text-center">
               <p className="text-white">

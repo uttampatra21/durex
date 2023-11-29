@@ -1,16 +1,14 @@
 import "./Wallet.css";
 import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const Wallet = () => {
-  const taskincome = useSelector((store) => store.taskincome);
-  const refferalincome = useSelector((store) => store.reffrailincome);
-
-  let date = new Date();
-  let hours = date.getMinutes();
-  let num = 0;
-  let mul = num + hours;
-  // console.log(mul);
+  let taskValue = 10;
+  let refferalincome = 100;
+  const storgeData =
+    localStorage.getItem("userXdata") != null
+      ? JSON.parse(localStorage.getItem("userXdata"))
+      : [];
 
   return (
     <div id="wallet">
@@ -22,13 +20,13 @@ const Wallet = () => {
 
           <div className="">
             <div className="flex flex-col justify-between gap-5 py-5">
-              {taskincome >= 500 ? (
+              {storgeData.taskIncome >= 500 ? (
                 <NavLink to="/tWithdraw">
                   <button class="btn w-full btn-outline btn-warning ">
                     Task Income{" "}
                     <h1 className="flex items-start ">
                       <small>₹</small>
-                      {taskincome}.99
+                      {storgeData.taskIncome}.99
                     </h1>
                   </button>
                 </NavLink>
@@ -37,18 +35,18 @@ const Wallet = () => {
                   Task Income{" "}
                   <h1 className="flex items-start ">
                     <small>₹</small>
-                    {taskincome}.99
+                    {storgeData.taskIncome}.99
                   </h1>
                 </button>
               )}
 
-              {refferalincome >= 100 ? (
+              {storgeData.refferalIncome >= 100 ? (
                 <NavLink to="/rWithdraw">
                   <button class="btn btn-outline btn-accent">
                     Refferal Income{" "}
                     <h1 className="flex items-start ">
                       <small>₹</small>
-                      {refferalincome}.99
+                      {storgeData.refferalIncome}.99
                     </h1>
                   </button>
                 </NavLink>
