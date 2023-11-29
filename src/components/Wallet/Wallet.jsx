@@ -3,8 +3,6 @@ import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 const Wallet = () => {
-  let taskValue = 10;
-  let refferalincome = 100;
   const storgeData =
     localStorage.getItem("userXdata") != null
       ? JSON.parse(localStorage.getItem("userXdata"))

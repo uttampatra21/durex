@@ -12,10 +12,10 @@ const Task = () => {
 
   const taskOne = () => {
     setLoading("flex");
-    // setTimeout(() => {
-    //   window.location.href =
-    //     "https://accounts.binance.com/en/register?ref=788565756&gclid=CjwKCAiAmZGrBhAnEiwAo9qHiR5eFazFeeU3CP9Ssv2EmOTgEwWWojeMkN2YUfbTMgxsb91VedflERoCvlkQAvD_BwE";
-    // }, 5000);
+    setTimeout(() => {
+      window.location.href =
+        "https://accounts.binance.com/en/register?ref=788565756&gclid=CjwKCAiAmZGrBhAnEiwAo9qHiR5eFazFeeU3CP9Ssv2EmOTgEwWWojeMkN2YUfbTMgxsb91VedflERoCvlkQAvD_BwE";
+    }, 5000);
     loading();
   };
 

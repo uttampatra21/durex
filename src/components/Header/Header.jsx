@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
 
 const Header = () => {
-  let userPassword = 101;
+  const storgeData =
+    localStorage.getItem("userXdata") != null
+      ? JSON.parse(localStorage.getItem("userXdata"))
+      : [];
+
 
   const [hederColor, setHeaderColor] = useState("transparent");
   window.addEventListener("scroll", () => {
@@ -40,7 +43,7 @@ const Header = () => {
             </div>
           </label>
 
-          {userPassword === 101 ? (
+          {storgeData.password != null ? (
             <ul
               tabIndex="0"
               className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content base-background rounded-box w-52"
@@ -60,12 +63,6 @@ const Header = () => {
               <li>
                 <NavLink to="/task">
                   <a className="justify-between">Task</a>
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink to="/activation">
-                  <a className="justify-between">Activation</a>
                 </NavLink>
               </li>
 
@@ -93,7 +90,7 @@ const Header = () => {
                 </a>
               </li>
 
-              <li onClick={() => (userPassword = 1001)}>
+              <li>
                 <a>
                   <button>Log Out</button>
                 </a>

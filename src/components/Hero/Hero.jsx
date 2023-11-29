@@ -1,9 +1,11 @@
 import React from "react";
 import "./Hero.css";
 import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
 const Hero = () => {
-  const admin = useSelector((store) => store.adminPage);
+  const storgeData =
+    localStorage.getItem("userXdata") != null
+      ? JSON.parse(localStorage.getItem("userXdata"))
+      : [];
 
   return (
     <div id="hero">
@@ -16,7 +18,7 @@ const Hero = () => {
           solutions.
         </p>
 
-        {admin === 10 ? (
+        {storgeData.password != null ? (
           <NavLink to="">
             <button
               className="text-2xl border-none text-white btn btn-accent"
