@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Dashboard.css";
 import { FaUsers } from "react-icons/fa6";
-import Refferal from "../Refferal/Refferal";
+import RaffrailNames from "../Raffrail/RaffrailNames";
 
 const Dashboard = () => {
   const storgeData =
@@ -17,22 +17,25 @@ const Dashboard = () => {
   const searchValue = () => {};
 
   let data = storgeData.reffer.map((x) => {
-    return <Refferal x={x} />;
+    return <RaffrailNames x={x} />;
   });
 
   const d = new Date();
   let taskIncome = d.getHours() - 4;
+  let time = d.getHours();
 
   return (
     <>
       <div id="dashboard">
-        <h1 className="text-center text-white pt-5 text-3xl">
-          {storgeData.username}
-        </h1>
         <div className="content">
           <main>
+          <h1 className="text-white flex flex-col text-center text-3xl">
+                <small>Welcome,</small>
+                {storgeData.name}
+              </h1>
             {/* <!-- Insights --> */}
             <ul className="insights">
+              
               <li>
                 <i className="bx bx-calendar-check"></i>
                 <span className="info">

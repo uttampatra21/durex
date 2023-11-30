@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import "./RWithdraw.css";
 import Payment from "../Bank Details/Payment";
 const RWithdraw = () => {
+  const storgeData =
+    localStorage.getItem("userXdata") != null
+      ? JSON.parse(localStorage.getItem("userXdata"))
+      : [];
+
   const [payment, setPayment] = useState();
 
   const UPI = () => {
@@ -59,7 +64,7 @@ const RWithdraw = () => {
               Confirm Account
             </label>
           </div>
-        } 
+        }
         IFSC={
           <div class="form__group">
             <input
@@ -91,7 +96,8 @@ const RWithdraw = () => {
               <button class="btn btn-outline btn-accent">
                 Refferal Income{" "}
                 <h1 class="flex items-start ">
-                  <small>₹</small>50.00
+                  <small>₹</small>
+                  {storgeData.rffBalance}
                 </h1>
               </button>
             </div>

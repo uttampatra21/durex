@@ -38,13 +38,13 @@ const Wallet = () => {
                 </button>
               )}
 
-              {storgeData.refferalIncome >= 100 ? (
+              {storgeData.reffer.length*100 >= 100 ? (
                 <NavLink to="/rWithdraw">
                   <button class="btn btn-outline btn-accent">
                     Refferal Income{" "}
                     <h1 className="flex items-start ">
                       <small>₹</small>
-                      {storgeData.refferalIncome}.99
+                      {storgeData.reffer.length*100}.99
                     </h1>
                   </button>
                 </NavLink>

@@ -1,7 +1,7 @@
 export const user = [
   {
     id: "ABCD",
-    password: "12345",
+    password: "uttam69",
     name: "Uttam Kumar Patra",
     reffer: [
       { username: "Nirmal Mandal", status: "Pending", class: "pending" },
@@ -11,10 +11,11 @@ export const user = [
       { username: "Urmila Maity", status: "Complete", class: "completed" },
     ],
     taskIncome: 450,
+    rffBalance: 500,
   },
   {
-    id: "QWER",
-    password: "123456",
+    id: "ABCD",
+    password: "12345",
     name: "Manotosh Maity",
     reffer: [
       { username: "Dipali Sau", status: "Complete", class: "completed" },
@@ -35,5 +36,6 @@ export const user = [
       { username: "Suman Maity", status: "Complete", class: "completed" },
     ],
     taskIncome: 350,
+    rffBalance: 1600,
   },
 ];
