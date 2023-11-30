@@ -9,7 +9,7 @@ const UpiMethod = () => {
           type="tel"
           name=""
           className="name"
-          placeholder="Pyatm: 6294718722@paytm"
+          placeholder="Pyatm: 12345678@paytm"
           required
         />
         <i className="fa fa-credit-card icon"></i>
@@ -21,7 +21,7 @@ const UpiMethod = () => {
           type="tel"
           name=""
           className="name"
-          placeholder="Google Pay : 6294718722@gpay"
+          placeholder="Google Pay : 12345678@gpay"
           required
         />
         <i className="fa fa-credit-card icon"></i>
@@ -33,7 +33,7 @@ const UpiMethod = () => {
           type="tel"
           name=""
           className="name"
-          placeholder="Phone Pay : 6294718722@paytm"
+          placeholder="Phone Pay : 1234567@paytm"
           required
         />
         <i className="fa fa-credit-card icon"></i>

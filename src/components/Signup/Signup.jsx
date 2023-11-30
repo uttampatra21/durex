@@ -13,7 +13,6 @@ const Signup = () => {
       "https://script.google.com/macros/s/AKfycbwQneDKGY1B0rlITZYc7YFG5YaVvgaTKIstLII1H75HzDnsC0zwp4bozhUYlPwo8dXVLw/exec";
     const form = document.forms["mainData"];
 
-    e.preventDefault();
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then((response) => console.log("You are welcome"))
       .catch((error) => console.error("Error!", error.message));

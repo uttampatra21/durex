@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Dashboard.css";
 import { FaUsers } from "react-icons/fa6";
+import Refferal from "../Refferal/Refferal";
 
 const Dashboard = () => {
   const storgeData =
@@ -16,16 +17,7 @@ const Dashboard = () => {
   const searchValue = () => {};
 
   let data = storgeData.reffer.map((x) => {
-    return (
-      <tr>
-        <td>
-          <p>{x.username}</p>
-        </td>
-        <td>
-          <span className={`status ${x.class}`}>{x.status}</span>
-        </td>
-      </tr>
-    );
+    return <Refferal x={x} />;
   });
 
   const d = new Date();
@@ -35,7 +27,7 @@ const Dashboard = () => {
     <>
       <div id="dashboard">
         <h1 className="text-center text-white pt-5 text-3xl">
-          {storgeData.name}
+          {storgeData.username}
         </h1>
         <div className="content">
           <main>
@@ -44,15 +36,8 @@ const Dashboard = () => {
               <li>
                 <i className="bx bx-calendar-check"></i>
                 <span className="info">
-                  <h3>₹ {taskIncome},00</h3>
+                  <h3>₹ {storgeData.taskIncome + taskIncome},00</h3>
                   <p>Task Income</p>
-                </span>
-              </li>
-              <li>
-                <i className="bx bx-show-alt"></i>
-                <span className="info">
-                  <h3>₹ {storgeData.refferalIncome},00</h3>
-                  <p>Referral Income</p>
                 </span>
               </li>
               <li>
@@ -62,10 +47,22 @@ const Dashboard = () => {
                   <p>Referral</p>
                 </span>
               </li>
+
+              <li>
+                <i className="bx bx-show-alt"></i>
+                <span className="info">
+                  <h3>₹ {storgeData.reffer.length * 100},00</h3>
+                  <p>Referral Income</p>
+                </span>
+              </li>
+
               <li>
                 <i className="bx bx-dollar-circle"></i>
                 <span className="info">
-                  <h3>₹ {storgeData.totalIncom},99</h3>
+                  <h3>
+                    ₹ {storgeData.reffer.length * 100 + storgeData.taskIncome}
+                    ,99
+                  </h3>
                   <p>Total Income</p>
                 </span>
               </li>

@@ -138,19 +138,6 @@ const Payment = () => {
             </div>
           </div>
 
-          <div className="input_group">
-            <div className="input_box">
-              <input
-                type="text"
-                placeholder="Aadhaar Number"
-                required
-                className="name"
-                name="Aadhaar Number"
-              />
-              <i className="fa fa-user icon"></i>
-            </div>
-          </div>
-
           {/* <!--Account Information End--> */}
 
           {/* <!--DOB & Gender Start--> */}

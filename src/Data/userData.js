@@ -2,7 +2,7 @@ export const user = [
   {
     id: "ABCD",
     password: "12345",
-    name: "",
+    name: "Uttam Kumar Patra",
     reffer: [
       { username: "Nirmal Mandal", status: "Pending", class: "pending" },
       { username: "Uma Maity", status: "Complete", class: "completed" },
@@ -11,8 +11,6 @@ export const user = [
       { username: "Urmila Maity", status: "Complete", class: "completed" },
     ],
     taskIncome: 450,
-    refferalIncome: 2400,
-    totalIncom: 850,
   },
   {
     id: "QWER",
@@ -34,11 +32,8 @@ export const user = [
       { username: "Lokesh Roy", status: "Complete", class: "completed" },
       { username: "Mojon Maity", status: "Complete", class: "completed" },
       { username: "Suman Maity", status: "Complete", class: "completed" },
-      { username: "Dipankar Kamila", status: "Complete", class: "completed" },
-      { username: "Sayan Sen", status: "Complete", class: "completed" },
+      { username: "Suman Maity", status: "Complete", class: "completed" },
     ],
     taskIncome: 350,
-    refferalIncome: 1700,
-    totalIncom: 4850,
   },
 ];
