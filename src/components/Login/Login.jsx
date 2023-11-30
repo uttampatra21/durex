@@ -56,7 +56,7 @@ const Login = () => {
 
               {admin}
             </form>
-            <div className="sign-up py-10 text-center" style={{marginTop:"20px"}}>
+            <div className="sign-up text-center" style={{marginTop:"9px"}}>
               <NavLink to="/signup">
                 <button className="button" style={{backgroundColor:"black", color:"white"}}>Sign Up</button>
               </NavLink>

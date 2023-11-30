@@ -75,9 +75,7 @@ function App() {
           path="/store"
           element={
             <>
-              <Header />
               <Store />
-              <Footer />
             </>
           }
         />
