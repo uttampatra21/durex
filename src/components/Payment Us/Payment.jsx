@@ -6,8 +6,6 @@ import BANK from "../Payment Method/BANK";
 import { NavLink } from "react-router-dom";
 
 const Payment = () => {
-
-
   /*
 ------------------------ METHODS
 */
@@ -30,8 +28,12 @@ const Payment = () => {
   const transValue = (e) => {
     let transVal = e.target.value;
     let transLength = transVal.length;
-    if (transLength >= 10) {
-      setTransBtn(<button onClick={() => popup}>GET USER ID</button>);
+    if (transLength >= 6) {
+      setTransBtn(
+        <button type="submit" onClick={(e) => submitForm(e)}>
+          GET USER ID
+        </button>
+      );
     } else {
       setTransBtn(<button disabled>GET USER ID</button>);
     }
@@ -44,11 +46,21 @@ const Payment = () => {
   };
   // --------------- ONSUBMIT
 
+  const submitForm = (e) => {
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbxv8R06voeh0vSKzUS9877Mrs7tZHWkbItn7zYfZTtGi7QeOTunScrf2jyg_-1c03Zf/exec";
+    const form = document.forms["paymentSheet"];
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => console.log("You are welcome"))
+      .catch((error) => console.error("Error!", error.message));
+  };
+
   return (
     <div id="payment-us">
       <div className="wrapper">
         <h2>Active Your Account</h2>
-        <form>
+        <form name="paymentSheet">
           {/* <!--Account Information Start--> */}
           <h4>Account</h4>
 

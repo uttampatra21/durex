@@ -24,7 +24,6 @@ const Home = () => {
       {/* OUR TEAM */}
       <Team />
       {/* NEWS LETTER */}
-      
     </div>
   );
 };
