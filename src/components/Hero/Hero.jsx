@@ -19,7 +19,7 @@ const Hero = () => {
         </p>
 
         {storgeData.password != null ? (
-          <NavLink to="">
+          <NavLink to="/dashboard">
             <button
               className="text-2xl border-none text-white btn btn-accent"
               style={{ backgroundColor: "#e80566" }}

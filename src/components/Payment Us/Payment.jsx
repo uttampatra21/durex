@@ -30,9 +30,11 @@ const Payment = () => {
     let transLength = transVal.length;
     if (transLength >= 6) {
       setTransBtn(
-        <button type="submit" onClick={(e) => submitForm(e)}>
-          GET USER ID
-        </button>
+        <NavLink to="/activation">
+          <button type="submit" onClick={(e) => submitForm(e)}>
+            GET USER ID
+          </button>
+        </NavLink>
       );
     } else {
       setTransBtn(<button disabled>GET USER ID</button>);

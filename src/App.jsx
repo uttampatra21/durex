@@ -11,6 +11,8 @@ import Signup from "./components/Signup/Signup";
 import RWithdraw from "./components/RWithdraw/RWithdraw";
 import TWithdraw from "./components/TWithdraw/TWithdraw";
 import Payment from "./components/Payment Us/Payment";
+import Activation from "./components/Activation/Activation";
+import Store from "./components/Store/Store";
 function App() {
   return (
     <>
@@ -41,7 +43,7 @@ function App() {
           element={
             <>
               <Header />
-              <Signup />
+              <Payment />
               <Footer />
             </>
           }
@@ -64,6 +66,17 @@ function App() {
             <>
               <Header />
               <Task />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route
+          path="/store"
+          element={
+            <>
+              <Header />
+              <Store />
               <Footer />
             </>
           }
@@ -128,6 +141,17 @@ function App() {
           element={
             <>
               <Header />
+            </>
+          }
+        />
+
+        <Route
+          path="/activation"
+          element={
+            <>
+              <Header />
+              <Activation />
+              <Footer />
             </>
           }
         />

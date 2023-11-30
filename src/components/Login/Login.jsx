@@ -56,13 +56,10 @@ const Login = () => {
 
               {admin}
             </form>
-            <div className="sign-up py-10 text-center">
-              <p className="text-white">
-                Didn't have an account ?{" "}
-                <NavLink to="/signup">
-                  <a className="text-blue-500">Sign Up</a>
-                </NavLink>
-              </p>
+            <div className="sign-up py-10 text-center" style={{marginTop:"20px"}}>
+              <NavLink to="/signup">
+                <button className="button" style={{backgroundColor:"black", color:"white"}}>Sign Up</button>
+              </NavLink>
             </div>
           </div>
         </div>
