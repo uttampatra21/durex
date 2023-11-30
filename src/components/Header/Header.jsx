@@ -8,7 +8,6 @@ const Header = () => {
       ? JSON.parse(localStorage.getItem("userXdata"))
       : [];
 
-
   const [hederColor, setHeaderColor] = useState("transparent");
   window.addEventListener("scroll", () => {
     let lastKnownScrollPosition = window.scrollY;
@@ -91,9 +90,11 @@ const Header = () => {
               </li>
 
               <li>
-                <a>
-                  <button>Log Out</button>
-                </a>
+                <NavLink to="/login">
+                  <a>
+                    <button>Log Out</button>
+                  </a>
+                </NavLink>
               </li>
             </ul>
           ) : (

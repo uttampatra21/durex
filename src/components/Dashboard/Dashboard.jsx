@@ -34,6 +34,9 @@ const Dashboard = () => {
   return (
     <>
       <div id="dashboard">
+        <h1 className="text-center text-white pt-5 text-3xl">
+          {storgeData.name}
+        </h1>
         <div className="content">
           <main>
             {/* <!-- Insights --> */}

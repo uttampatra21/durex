@@ -12,9 +12,8 @@ import RWithdraw from "./components/RWithdraw/RWithdraw";
 import TWithdraw from "./components/TWithdraw/TWithdraw";
 import Payment from "./components/Payment Us/Payment";
 function App() {
-
   return (
-    <BrowserRouter>
+    <>
       <Routes>
         <Route
           path="/"
@@ -47,7 +46,6 @@ function App() {
             </>
           }
         />
- 
 
         <Route
           path="/dashboard"
@@ -134,7 +132,7 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
