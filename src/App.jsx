@@ -107,7 +107,7 @@ function App() {
           element={
             <>
               <Header />
-              <Signup />
+              <Payment />
               <Footer />
             </>
           }

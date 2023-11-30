@@ -1,19 +1,12 @@
 import React from "react";
 import "./Payment.css";
-import { useSelector } from "react-redux";
 import { useState } from "react";
 import UpiMethod from "../Payment Method/UpiMethod";
 import BANK from "../Payment Method/BANK";
 import { NavLink } from "react-router-dom";
 
 const Payment = () => {
-  const paymentValue = useSelector((store) => store.paymentUs);
 
-  if (paymentValue == 12) {
-    console.log(12);
-  } else {
-    console.log(2);
-  }
 
   /*
 ------------------------ METHODS
@@ -50,15 +43,12 @@ const Payment = () => {
     alert();
   };
   // --------------- ONSUBMIT
-  const onsubmit = (e) => {
-    e.preventdefault();
-    alert();
-  };
+
   return (
     <div id="payment-us">
       <div className="wrapper">
-        <h2>Payment</h2>
-        <form onSubmit={(e) => onsubmit(e)} method="post">
+        <h2>Active Your Account</h2>
+        <form>
           {/* <!--Account Information Start--> */}
           <h4>Account</h4>
 
