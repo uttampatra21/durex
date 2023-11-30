@@ -94,12 +94,6 @@
   
   li { list-style: none; }
   
-  a,
-  img,
-  span,
-  input,
-  button,
-  ion-icon { display: block; }
   
   a {
     color: inherit;
@@ -124,17 +118,10 @@
   address { font-style: normal; }
   
   html {
-    font-family: var(--ff-roboto);
-    font-size: 10px;
+   
     scroll-behavior: smooth;
   }
   
-  body {
-    background-color: var(--white);
-    color: var(--black);
-    font-size: 1.6rem;
-    line-height: 1.7;
-  }
   
   body.active { overflow: hidden; }
   
@@ -338,7 +325,7 @@
   
   .sidebar-link:is(:hover, :focus) { color: var(--tan-crayola); }
   
-  .navbar { margin-block-end: 60px; }
+  /* .navbar { margin-block-end: 60px; } */
   
   .navbar-item:not(:last-child) { margin-block-end: 15px; }
   
