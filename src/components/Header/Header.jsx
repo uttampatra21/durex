@@ -72,7 +72,7 @@ const Header = () => {
               </li>
 
               <li>
-                <NavLink to="/store">
+                <NavLink>
                   <a className="justify-between">Store</a>
                 </NavLink>
               </li>

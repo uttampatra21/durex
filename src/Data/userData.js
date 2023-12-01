@@ -13,6 +13,7 @@ export const user = [
     taskIncome: 450,
     rffBalance: 500,
   },
+
   {
     id: "ABCD",
     password: "12345",
@@ -33,9 +34,14 @@ export const user = [
       { username: "Lokesh Roy", status: "Complete", class: "completed" },
       { username: "Mojon Maity", status: "Complete", class: "completed" },
       { username: "Suman Maity", status: "Complete", class: "completed" },
-      { username: "Suman Maity", status: "Complete", class: "completed" },
+      { username: "Manish Das", status: "Complete", class: "completed" },
+      { username: "Sk Sahjan", status: "Complete", class: "completed" },
+      { username: "Sukumar Sen", status: "Complete", class: "completed" },
+      { username: "Mrinal Dutta", status: "Complete", class: "completed" },
+      { username: "Srijan Mandal", status: "Complete", class: "completed" },
     ],
-    taskIncome: 380,
-    rffBalance: 1600,
+    taskIncome: 4840,
+    rffBalance: 2000,
   },
+
 ];
