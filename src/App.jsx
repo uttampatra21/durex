@@ -10,9 +10,19 @@ import RWithdraw from "./components/RWithdraw/RWithdraw";
 import TWithdraw from "./components/TWithdraw/TWithdraw";
 import Payment from "./components/Payment Us/Payment";
 import Activation from "./components/Activation/Activation";
+import Service from "./components/Service/Service";
 function App() {
   return (
-    <>
+    <div style={{ position: "relative" }}>
+      <div
+        style={{ position: "fixed", bottom: "16px", right: "20px", zIndex: "999" }}
+      >
+        <img
+        width="80px"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"
+          alt=""
+        />
+      </div>
       <Routes>
         <Route
           path="/"
@@ -132,6 +142,16 @@ function App() {
         />
 
         <Route
+          path="services"
+          element={
+            <>
+              <Header />
+              <Service />
+            </>
+          }
+        />
+
+        <Route
           path="/activation"
           element={
             <>
@@ -142,7 +162,7 @@ function App() {
           }
         />
       </Routes>
-    </>
+    </div>
   );
 }
 

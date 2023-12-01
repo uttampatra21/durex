@@ -81,6 +81,14 @@ const Header = () => {
               </li>
 
               <li>
+                <NavLink to="/services">
+                  <a>
+                    <button>Service</button>
+                  </a>
+                </NavLink>
+              </li>
+
+              <li>
                 <NavLink to="/login">
                   <a>
                     <button>Log Out</button>
@@ -109,6 +117,14 @@ const Header = () => {
                     Upcoming
                   </span>
                 </a>
+              </li>
+
+              <li>
+                <NavLink to="/services">
+                  <a>
+                    <button>Service</button>
+                  </a>
+                </NavLink>
               </li>
 
               <li>
