@@ -1,18 +1,15 @@
 import Header from "./components/Header/Header";
 import Home from "./components/Main/Home";
 import Footer from "./components/Footer/Footer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Wallet from "./components/Wallet/Wallet";
 import Task from "./components/Task/Task";
-import Refferal from "./components/Refferal/Refferal";
 import Login from "./components/Login/Login";
-import Signup from "./components/Signup/Signup";
 import RWithdraw from "./components/RWithdraw/RWithdraw";
 import TWithdraw from "./components/TWithdraw/TWithdraw";
 import Payment from "./components/Payment Us/Payment";
 import Activation from "./components/Activation/Activation";
-import Store from "./components/Store/Store";
 function App() {
   return (
     <>
@@ -67,15 +64,6 @@ function App() {
               <Header />
               <Task />
               <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/store"
-          element={
-            <>
-              <Store />
             </>
           }
         />
