@@ -28,14 +28,12 @@ const Dashboard = () => {
     <>
       <div id="dashboard">
         <div className="content">
-          <main>
-          <h1 className="text-white flex flex-col text-center text-3xl">
-                <small>Welcome,</small>
-                {storgeData.name}
-              </h1>
+          <main style={{padding:"20px 0"}}>
+            <div className="wrapper" style={{ backgroundColor: "transparent" }}>
+              <h2 id="username">{storgeData.name}</h2>
+            </div>
             {/* <!-- Insights --> */}
             <ul className="insights">
-              
               <li>
                 <i className="bx bx-calendar-check"></i>
                 <span className="info">

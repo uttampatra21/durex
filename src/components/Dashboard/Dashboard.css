@@ -132,6 +132,11 @@ body.dark {
   grid-gap: 16px;
   margin-bottom: 24px;
 }
+#username{
+  background-color: #0f172a !important;
+  color: #fff !important;
+  border: none !important;
+}
 
 .content main .bottom-data .header h3 {
   margin-right: 15px;
