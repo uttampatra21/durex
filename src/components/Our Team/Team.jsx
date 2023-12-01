@@ -17,6 +17,7 @@ const Team = () => {
           }
           name={"Raj Kapoor"}
           title={"India, Trade Businessman"}
+          descripton="corporX is asia's largest marketing company. Our company holding global's top notch marketing like Google, Apple, Microsoft, Amazon, Tata, Adani Group etc."
         />
         <TeamCard
           img={
@@ -24,6 +25,7 @@ const Team = () => {
           }
           name={"Elen Methews"}
           title={"America, Market Leader"}
+          descripton="corporX is asia's largest marketing company. Our branding holding global's top notch companies stocks like Google, Apple, Microsoft, Amazon, Tata, Adani Group etc."
         />
         <TeamCard
           img={
@@ -31,6 +33,7 @@ const Team = () => {
           }
           name={"Dengh Lyphen"}
           title={"USA, CEO Dylth PVT"}
+          descripton="corporX is asia's largest marketing company. Our brand holding global's top notch companies stocks like Google, Apple, Microsoft, Amazon, Tata, Adani Group etc."
         />
       </div>
     </div>

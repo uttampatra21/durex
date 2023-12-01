@@ -43,5 +43,6 @@ export const user = [
     taskIncome: 4840,
     rffBalance: 2000,
   },
+  
 
 ];

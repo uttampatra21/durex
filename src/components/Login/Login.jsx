@@ -27,7 +27,7 @@ const Login = () => {
 
   return (
     <div id="refferal">
-      <section>
+      <div id="login-sec">
         <div class="form-box">
           <div class="form-value">
             <form action="">
@@ -63,7 +63,7 @@ const Login = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

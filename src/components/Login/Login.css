@@ -1,12 +1,11 @@
-section {
+#login-sec {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 0 15px;
+  padding: 15px;
   width: 100%;
   background: url("https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg")
-  no-repeat;
+    no-repeat;
   background-position: center;
   background-size: cover;
 }

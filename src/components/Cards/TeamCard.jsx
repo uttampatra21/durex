@@ -1,6 +1,6 @@
 import React from "react";
 
-const TeamCard = ({img, name, title}) => {
+const TeamCard = ({img, name, title,descripton}) => {
   return (
     <div>
       <div class="relative w-full group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl">
@@ -137,10 +137,7 @@ const TeamCard = ({img, name, title}) => {
             <div class="flex flex-wrap justify-center">
               <div class="w-full px-6">
                 <p class="mb-4 font-light leading-relaxed text-gray-600 dark:text-gray-400">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                  turpis orci, maximus sed purus a, cursus scelerisque purus.
-                  Morbi molestie, odio at sagittis rhoncus, felis massa iaculis
-                  mi, quis molestie erat ipsum vel risus.
+                  {descripton}
                 </p>
               </div>
             </div>
