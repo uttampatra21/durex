@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import Payment from "../Bank Details/Payment";
 import "./TWithdraw.css";
 const TWithdraw = () => {
+  const storgeData =
+    localStorage.getItem("userXdata") != null
+      ? JSON.parse(localStorage.getItem("userXdata"))
+      : [];
+
   const [payment, setPayment] = useState();
   const UPI = () => {
     setPayment(
@@ -90,7 +95,8 @@ const TWithdraw = () => {
                 <button class="btn w-full btn-outline btn-warning ">
                   Task Income{" "}
                   <h1 class="flex items-start ">
-                    <small>₹</small>50.00
+                    <small>₹</small>
+                    {storgeData.taskIncome}.00
                   </h1>
                 </button>
               </div>
