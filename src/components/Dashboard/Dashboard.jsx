@@ -16,6 +16,13 @@ const Dashboard = () => {
 
   const searchValue = () => {};
 
+  const pagiNation = () => {
+    let filter = storgeData.reffer.slice(0, 3);
+
+    console.log(filter);
+  };
+  pagiNation();
+
   let data = storgeData.reffer.map((x) => {
     return <RaffrailNames x={x} />;
   });
@@ -28,7 +35,7 @@ const Dashboard = () => {
     <>
       <div id="dashboard">
         <div className="content">
-          <main style={{padding:"20px 0"}}>
+          <main style={{ padding: "20px 0" }}>
             <div className="wrapper" style={{ backgroundColor: "transparent" }}>
               <h2 id="username">{storgeData.name}</h2>
             </div>
@@ -92,15 +99,49 @@ const Dashboard = () => {
                     </label>
                   </div>
                 </div>
+                <div id="reffer-users">
+                  <div id="status" className="flex justify-between">
+                    <span>User</span>
+                    <span>Status</span>
+                  </div>
+                </div>
                 <table>
-                  <thead>
-                    <tr>
-                      <th>User</th>
-                      <th>Status</th>
-                    </tr>
-                  </thead>
+                  
                   <tbody>{data}</tbody>
+                  
                 </table>
+                <div
+                    id="pagination"
+                    className="flex justify-end items-center pt-5 w-full"
+                  >
+                    <div className="join">
+                      <input
+                        className="join-item btn btn-square"
+                        type="radio"
+                        name="options"
+                        aria-label="1"
+                        checked
+                      />
+                      <input
+                        className="join-item btn btn-square"
+                        type="radio"
+                        name="options"
+                        aria-label="2"
+                      />
+                      <input
+                        className="join-item btn btn-square"
+                        type="radio"
+                        name="options"
+                        aria-label="3"
+                      />
+                      <input
+                        className="join-item btn btn-square"
+                        type="radio"
+                        name="options"
+                        aria-label="4"
+                      />
+                    </div>
+                  </div>
               </div>
             </div>
           </main>
