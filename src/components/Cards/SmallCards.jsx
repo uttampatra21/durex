@@ -1,5 +1,5 @@
 import React from "react";
-const SmallCards = ({ bgColor, logo, white }) => {
+const SmallCards = ({ bgColor, logo, white, title, description }) => {
   return (
     <div>
       <div className="p-4 w-full">
@@ -9,12 +9,9 @@ const SmallCards = ({ bgColor, logo, white }) => {
         >
           {logo}
           <h2 id="service-id" className="title-font font-medium text-3xl">
-            Customer Services
+            {title}
           </h2>
-          <p className="leading-relaxed">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa,
-            voluptatem!
-          </p>
+          <p className="leading-relaxed">{description}</p>
         </center>
       </div>
     </div>
@@ -22,4 +19,3 @@ const SmallCards = ({ bgColor, logo, white }) => {
 };
 
 export default SmallCards;
-

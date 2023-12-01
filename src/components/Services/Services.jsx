@@ -20,8 +20,10 @@ const Services = () => {
         <div className="right-cont">
           <h1>World Class Service Growth Your Business</h1>
           <p>
-            Convert your emails into tickets and keep them all organized in one
-            place. Never leave customers' questions unanswered.
+            We are committed to honor, encourage and support individuals and
+            teams who contribute, through their behavior and actions, to the
+            success of the organization i.e. we are one of the most successful
+            company in India.
           </p>
           <ul>
             <li>
@@ -54,21 +56,29 @@ const Services = () => {
         </div>
         <div id="services-card" className="img grid-cols-2 grid">
           <SmallCards
+            title="Customer Services"
+            description="corporX support model ensures that a customer is able to get their issue resolved no matter what day or time it is."
             bgColor={"#0648b3"}
             white={"white"}
             logo={<FaUserAstronaut className="text-6xl" />}
           />
           <SmallCards
+            title="Growth"
+            description="WE FOLLOW THE GOOD PATH. Our success is measured not only in economic terms but by the respect, trust and corporX we earn."
             bgColor={"#05a677"}
             white={"white"}
             logo={<FaLightbulb className="text-6xl" />}
           />
           <SmallCards
+            title="Opportunity"
+            description="We provide the best business and earning opportunity we are here. To deliver exceptional quality platform of earning to urban and semi urban."
             bgColor={"#e80566"}
             white={"white"}
             logo={<FaFire className="text-6xl" />}
           />
           <SmallCards
+            title="Support"
+            description="We provide exceptional Financial services to a wide range of commercial and residential properties over many years, including large corporate environments. We believe in success, a process to make progress continuously."
             bgColor={"#1a2c79"}
             white={"white"}
             logo={<FaShapes className="text-6xl" />}
