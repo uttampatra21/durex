@@ -29,7 +29,7 @@ const Header = () => {
           <div className="btn btn-ghost text-xl text-black">
             <img
               width="130px"
-              src="https://github.com/uttampatra21/public/raw/main/logo.png"
+              src="https://github.com/uttampatra21/public/blob/main/logo%20-%20Copy.png?raw=true"
             />
           </div>
         </NavLink>
