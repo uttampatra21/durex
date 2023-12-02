@@ -4,12 +4,12 @@ const Refferal = () => {
   return (
     <div id="refferal">
       <section>
-        <div class="form-box">
-          <div class="form-value">
+        <div className="form-box">
+          <div className="form-value">
             <form action="">
               <h2 className="text-white text-2xl">Create Account</h2>
 
-              <div class="inputbox">
+              <div className="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input className="input-input" type="text" required id="" />
                 <label className="label" for="">
@@ -17,7 +17,7 @@ const Refferal = () => {
                 </label>
               </div>
 
-              <div class="inputbox">
+              <div className="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
                 <input type="text" required />
                 <label className="label" for="">
@@ -25,7 +25,7 @@ const Refferal = () => {
                 </label>
               </div>
 
-              <div class="inputbox">
+              <div className="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input className="input-input" type="email" required />
                 <label className="label" for="">
@@ -33,7 +33,7 @@ const Refferal = () => {
                 </label>
               </div>
 
-              <div class="inputbox">
+              <div className="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input className="input-input" type="text" required />
                 <label className="label" for="">
@@ -41,7 +41,7 @@ const Refferal = () => {
                 </label>
               </div>
 
-              <div class="inputbox">
+              <div className="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input className="input-input" type="text" required />
                 <label className="label" for="">

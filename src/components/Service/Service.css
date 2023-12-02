@@ -1,5 +1,7 @@
 #service {
   height: 100vh;
+  background-color: rgb(10 21 66);
+  overflow: auto;
 }
 
 #service img {

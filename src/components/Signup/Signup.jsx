@@ -21,12 +21,12 @@ const Signup = () => {
   return (
     <div id="signup">
       <section className="section">
-        <div class="form-box">
-          <div class="form-value">
+        <div className="form-box">
+          <div className="form-value">
             <form name="mainData">
               <h2 className="text-white text-2xl">Create Account</h2>
 
-              <div class="inputbox">
+              <div className="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input
                   onChange={(e) => refferId(e)}
@@ -41,7 +41,7 @@ const Signup = () => {
                 </label>
               </div>
 
-              <div class="inputbox">
+              <div className="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
                 <input type="text" required name="Refferal Name" />
                 <label className="label" for="">
@@ -49,7 +49,7 @@ const Signup = () => {
                 </label>
               </div>
 
-              <div class="inputbox">
+              <div className="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
                 <input type="text" required name="Your Name" />
                 <label className="label" for="">
@@ -57,7 +57,7 @@ const Signup = () => {
                 </label>
               </div>
 
-              <div class="inputbox">
+              <div className="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input
                   className="input-input"
@@ -70,7 +70,7 @@ const Signup = () => {
                 </label>
               </div>
 
-              <div class="inputbox">
+              <div className="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input
                   className="input-input"

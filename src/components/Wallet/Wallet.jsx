@@ -20,7 +20,7 @@ const Wallet = () => {
             <div className="flex flex-col justify-between gap-5 py-5">
               {storgeData.taskIncome >= 500 ? (
                 <NavLink to="/tWithdraw">
-                  <button class="btn w-full btn-outline btn-warning ">
+                  <button className="btn w-full btn-outline btn-warning ">
                     Task Income{" "}
                     <h1 className="flex items-start ">
                       <small>₹</small>
@@ -29,7 +29,7 @@ const Wallet = () => {
                   </button>
                 </NavLink>
               ) : (
-                <button class="btn w-full btn-outline btn-warning ">
+                <button className="btn w-full btn-outline btn-warning ">
                   Task Income{" "}
                   <h1 className="flex items-start ">
                     <small>₹</small>
@@ -38,18 +38,18 @@ const Wallet = () => {
                 </button>
               )}
 
-              {storgeData.reffer.length*100 >= 100 ? (
+              {storgeData.reffer.length * 100 >= 100 ? (
                 <NavLink to="/rWithdraw">
-                  <button class="btn btn-outline btn-accent">
+                  <button className="btn btn-outline btn-accent">
                     Refferal Income{" "}
                     <h1 className="flex items-start ">
                       <small>₹</small>
-                      {storgeData.reffer.length*100}.99
+                      {storgeData.reffer.length * 100}.99
                     </h1>
                   </button>
                 </NavLink>
               ) : (
-                <button class="btn btn-outline btn-accent">
+                <button className="btn btn-outline btn-accent">
                   Refferal Income{" "}
                   <h1 className="flex items-start ">
                     <small>₹</small>
@@ -63,14 +63,14 @@ const Wallet = () => {
       </div>
 
       <div id="payment" className="py-5">
-        <div class="text-center flex flex-col items-center max-w-xl mx-auto">
-          <h1 class="text-3xl md:text-7xl font-bold mb-5 text-white">
+        <div className="text-center flex flex-col items-center max-w-xl mx-auto">
+          <h1 className="text-3xl md:text-7xl font-bold mb-5 text-white">
             Payment Partner
           </h1>
-          <h3 class="text-md mb-5 font-light text-white px-4">
+          <h3 className="text-md mb-5 font-light text-white px-4">
             Our global payment partners constantly giving seamless withdrawl
             experience. Additionally we are providing{" "}
-            <span class="text-lg leading-none italic font-bold text-cyan-500 mr-1">
+            <span className="text-lg leading-none italic font-bold text-cyan-500 mr-1">
               "
             </span>
             <span
@@ -83,16 +83,16 @@ const Wallet = () => {
             >
               no payment charges
             </span>
-            <span class="text-lg leading-none italic font-bold text-cyan-500 mr-1">
+            <span className="text-lg leading-none italic font-bold text-cyan-500 mr-1">
               "
             </span>
           </h3>
-          <div class="text-center mb-10">
-            <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>
-            <span class="inline-block w-3 h-1 rounded-full bg-emerald-500 ml-1"></span>
-            <span class="inline-block w-40 h-1 rounded-full bg-teal-500"></span>
-            <span class="inline-block w-3 h-1 rounded-full bg-cyan-500 ml-1"></span>
-            <span class="inline-block w-1 h-1 rounded-full bg-sky-500 ml-1"></span>
+          <div className="text-center mb-10">
+            <span className="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>
+            <span className="inline-block w-3 h-1 rounded-full bg-emerald-500 ml-1"></span>
+            <span className="inline-block w-40 h-1 rounded-full bg-teal-500"></span>
+            <span className="inline-block w-3 h-1 rounded-full bg-cyan-500 ml-1"></span>
+            <span className="inline-block w-1 h-1 rounded-full bg-sky-500 ml-1"></span>
           </div>
         </div>
 

@@ -6,6 +6,7 @@ import LetestNews from "../Latest News/LetestNews";
 import Testomonial from "../Testomonial/Testomonial";
 import Team from "../Our Team/Team";
 import Partner from "../Stock Partner/Partner";
+import Faq from "../FAQ/Faq";
 
 const Home = () => {
   return (

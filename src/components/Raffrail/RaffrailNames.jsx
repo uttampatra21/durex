@@ -7,7 +7,7 @@ const RaffrailNames = ({ x }) => {
         <p>{x.username}</p>
       </td>
       <td>
-        <span className={`status ${x.class}`}>{x.status}</span>
+        <span className={`status ${x.className}`}>{x.status}</span>
       </td>
     </tr>
   );

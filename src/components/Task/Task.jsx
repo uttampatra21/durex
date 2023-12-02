@@ -74,19 +74,19 @@ const Task = () => {
       </div>
 
       <div id="task-bar">
-        <div class="text-center flex flex-col items-center max-w-xl mx-auto">
-          <h1 class="text-3xl md:text-7xl font-bold mb-5 text-white">
+        <div className="text-center flex flex-col items-center max-w-xl mx-auto">
+          <h1 className="text-3xl md:text-7xl font-bold mb-5 text-white">
             Daily Task
           </h1>
-          <h3 class="text-md mb-5 font-light text-white px-4">
+          <h3 className="text-md mb-5 font-light text-white px-4">
             Complete your daily tasks to unlock awesome rewards.
           </h3>
-          <div class="text-center mb-10">
-            <span class="inline-block w-1 h-1 rounded-full bg-sky-500 ml-1"></span>
-            <span class="inline-block w-3 h-1 rounded-full bg-blue-500 ml-1"></span>
-            <span class="inline-block w-40 h-1 rounded-full bg-indigo-500"></span>
-            <span class="inline-block w-3 h-1 rounded-full bg-violet-500 ml-1"></span>
-            <span class="inline-block w-1 h-1 rounded-full bg-purple-500 ml-1"></span>
+          <div className="text-center mb-10">
+            <span className="inline-block w-1 h-1 rounded-full bg-sky-500 ml-1"></span>
+            <span className="inline-block w-3 h-1 rounded-full bg-blue-500 ml-1"></span>
+            <span className="inline-block w-40 h-1 rounded-full bg-indigo-500"></span>
+            <span className="inline-block w-3 h-1 rounded-full bg-violet-500 ml-1"></span>
+            <span className="inline-block w-1 h-1 rounded-full bg-purple-500 ml-1"></span>
           </div>
         </div>
         <div className="flex justify-between items-center">

@@ -152,6 +152,7 @@ function App() {
             <>
               <Header />
               <Service />
+              <Footer />
             </>
           }
         />

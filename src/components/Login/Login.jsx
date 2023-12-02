@@ -20,20 +20,19 @@ const Login = () => {
           </NavLink>
         );
         localStorage.setItem("userXdata", JSON.stringify(x));
-        console.log(x);
       }
     });
   };
 
   return (
     <div id="refferal">
-      <div id="login-sec">
-        <div class="form-box">
-          <div class="form-value">
+      <section className="" id="login-sec">
+        <div className="form-box">
+          <div className="form-value">
             <form action="">
               <h2 className="text-white text-2xl">Log In</h2>
 
-              <div class="inputbox">
+              <div className="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
                 <input type="text" required onChange={(e) => userID(e)} />
                 <label className="label" for="">
@@ -41,7 +40,7 @@ const Login = () => {
                 </label>
               </div>
 
-              <div class="inputbox">
+              <div className="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input
                   className="input-input"
@@ -56,14 +55,19 @@ const Login = () => {
 
               {admin}
             </form>
-            <div className="sign-up text-center" style={{marginTop:"9px"}}>
+            <div className="sign-up text-center" style={{ marginTop: "9px" }}>
               <NavLink to="/signup">
-                <button className="button" style={{backgroundColor:"black", color:"white"}}>Sign Up</button>
+                <button
+                  className="button"
+                  style={{ backgroundColor: "black", color: "white" }}
+                >
+                  Create Account
+                </button>
               </NavLink>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

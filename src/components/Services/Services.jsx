@@ -18,7 +18,7 @@ const Services = () => {
 
       <div id="grid-2-col">
         <div className="right-cont">
-          <h1>World Class Service Growth Your Business</h1>
+          <h1>World className Service Growth Your Business</h1>
           <p>
             We are committed to honor, encourage and support individuals and
             teams who contribute, through their behavior and actions, to the
@@ -44,7 +44,7 @@ const Services = () => {
             </li>
           </ul>
           <div className="py-4">
-            <NavLink to="/service">
+            <NavLink to="/services">
               <button
                 className="text-2xl flex items-center border-none text-white btn btn-accent"
                 style={{ backgroundColor: `rgb(232, 5, 102)` }}

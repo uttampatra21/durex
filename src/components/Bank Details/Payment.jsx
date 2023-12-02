@@ -11,86 +11,86 @@ const Payment = ({
   return (
     <div>
       <div id="withdraw">
-        <form action="" class="form">
-          <div class="form__group">
+        <form action="" className="form">
+          <div className="form__group">
             <input
               required
               min={minimum}
               type="number"
               id="amount"
-              class="form__input"
+              className="form__input"
               placeholder={placeholder}
               autocomplete="off"
             />
-            <label for="amount" class="form__label">
+            <label for="amount" className="form__label">
               Withdrawl Amount
             </label>
           </div>
 
-          <div class="form__group">
+          <div className="form__group">
             <input
               required
               type="text"
               id="email"
-              class="form__input"
+              className="form__input"
               placeholder=" "
               autocomplete="off"
             />
-            <label for="email" class="form__label">
+            <label for="email" className="form__label">
               Full Name
             </label>
           </div>
 
-          <div class="form__group">
+          <div className="form__group">
             <input
               required
               type="text"
               id="userid"
-              class="form__input"
+              className="form__input"
               placeholder=" "
               autocomplete="off"
             />
-            <label for="userid" class="form__label">
+            <label for="userid" className="form__label">
               User ID
             </label>
           </div>
 
-          <div class="form__group">
+          <div className="form__group">
             <input
               required
               type="email"
               id="password"
-              class="form__input"
+              className="form__input"
               placeholder=" "
             />
-            <label for="password" class="form__label">
+            <label for="password" className="form__label">
               Email
             </label>
           </div>
 
-          <div class="form__group">
+          <div className="form__group">
             <input
               required
               type="text"
               id="pan"
-              class="form__input"
+              className="form__input"
               placeholder=" "
               autocomplete="off"
             />
-            <label for="pan" class="form__label">
+            <label for="pan" className="form__label">
               PAN Number
             </label>
           </div>
 
-          <div class="form__group">
+          <div className="form__group">
             <input
               required
               type="text"
               id="phone"
-              class="form__input"
+              className="form__input"
               placeholder=" "
             />
-            <label for="phone" class="form__label">
+            <label for="phone" className="form__label">
               Phone Number
             </label>
           </div>
@@ -100,7 +100,7 @@ const Payment = ({
           {confirmaccount}
           {IFSC}
 
-          <button disabled class="form__button font-bold">
+          <button disabled className="form__button font-bold">
             Withdraw
           </button>
         </form>

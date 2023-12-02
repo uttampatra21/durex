@@ -18,7 +18,6 @@ const Dashboard = () => {
 
   const pagiNation = () => {
     let filter = storgeData.reffer.slice(0, 3);
-
     console.log(filter);
   };
   pagiNation();
@@ -106,42 +105,33 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <table>
-                  
                   <tbody>{data}</tbody>
-                  
                 </table>
                 <div
-                    id="pagination"
-                    className="flex justify-end items-center pt-5 w-full"
-                  >
-                    <div className="join">
-                      <input
-                        className="join-item btn btn-square"
-                        type="radio"
-                        name="options"
-                        aria-label="1"
-                        checked
-                      />
-                      <input
-                        className="join-item btn btn-square"
-                        type="radio"
-                        name="options"
-                        aria-label="2"
-                      />
-                      <input
-                        className="join-item btn btn-square"
-                        type="radio"
-                        name="options"
-                        aria-label="3"
-                      />
-                      <input
-                        className="join-item btn btn-square"
-                        type="radio"
-                        name="options"
-                        aria-label="4"
-                      />
-                    </div>
+                  id="pagination"
+                  className="flex justify-end items-center pt-5 w-full"
+                >
+                  <div className="join" id="reff-income">
+                    <input
+                      className="join-item btn btn-square"
+                      type="radio"
+                      name="options"
+                      aria-label="2"
+                    />
+                    <input
+                      className="join-item btn btn-square"
+                      type="radio"
+                      name="options"
+                      aria-label="3"
+                    />
+                    <input
+                      className="join-item btn btn-square"
+                      type="radio"
+                      name="options"
+                      aria-label="4"
+                    />
                   </div>
+                </div>
               </div>
             </div>
           </main>

@@ -86,7 +86,7 @@ const Payment = () => {
                 required
                 className="name"
               />
-              <i class="fa fa-calendar icon"></i>
+              <i className="fa fa-calendar icon"></i>
             </div>
           </div>
 
