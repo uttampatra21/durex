@@ -16,9 +16,12 @@ body {
   display: none;
 }
 
+#iframe::-webkit-scrollbar {
+  display: none;
+  padding: 0px;
+}
 
-
-@media only screen and (max-width: 800px)  {
+@media only screen and (max-width: 800px) {
   #service-id {
     font-size: 32px;
   }

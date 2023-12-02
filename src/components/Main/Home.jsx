@@ -7,6 +7,7 @@ import Testomonial from "../Testomonial/Testomonial";
 import Team from "../Our Team/Team";
 import Partner from "../Stock Partner/Partner";
 import Faq from "../FAQ/Faq";
+import Hosting from "../Hosting/Hosting";
 
 const Home = () => {
   return (
@@ -17,6 +18,8 @@ const Home = () => {
       <Services />
       {/* TRADE PARTNER */}
       <Partner />
+      {/* HOSTING */}
+      <Hosting />
       {/* BEST QUALITY SERVICES */}
       <Bestqualityservices />
       {/* Our Latest News */}
