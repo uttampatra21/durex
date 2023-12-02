@@ -21,7 +21,7 @@ const Hosting = () => {
         </div>
         <iframe
           id="iframe"
-          height="400px"
+          height="500px"
           frameborder="0"
           width="100%"
           style={{ borer: "none", overflow: "hidden" }}
