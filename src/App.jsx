@@ -23,11 +23,13 @@ function App() {
           zIndex: "999",
         }}
       >
-        <img
-          width="70px"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"
-          alt=""
-        />
+        <a href="https://wa.me/8371934028">
+          <img
+            width="70px"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"
+            alt=""
+          />
+        </a>
       </div>
       <Routes>
         <Route
