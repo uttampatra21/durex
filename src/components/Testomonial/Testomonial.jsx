@@ -43,11 +43,8 @@ const Testomonial = () => {
                         <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                           "
                         </span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quos sunt ratione dolor exercitationem minima quas
-                        itaque saepe quasi architecto vel! Accusantium, vero
-                        sint recusandae cum tempora nemo commodi soluta
-                        deleniti.
+                        corporX is one of the most trusted company in the world
+                        and their services is super fast.
                         <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                           "
                         </span>
@@ -70,9 +67,9 @@ const Testomonial = () => {
                         <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                           "
                         </span>
-                        Lorem ipsum, dolor sit amet, consectetur adipisicing
-                        elit. Dolore quod necessitatibus, labore sapiente, est,
-                        dignissimos ullam error ipsam sint quam tempora vel.
+                        The reason for joing this companty is customize my
+                        maximum earning potential. I have earned more then $500
+                        in two months, Thank you corporX.
                         <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                           "
                         </span>
@@ -97,9 +94,10 @@ const Testomonial = () => {
                         <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                           "
                         </span>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Vitae, obcaecati ullam excepturi dicta error
-                        deleniti sequi.
+                        If you wanna grow your earning potential then eaither
+                        run your business or be the part of business. corporX
+                        giving you the opportunity to have your own share. And
+                        work like you are the part of the business.
                         <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                           "
                         </span>
@@ -122,11 +120,10 @@ const Testomonial = () => {
                         <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                           "
                         </span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Architecto inventore voluptatum nostrum atque, corrupti,
-                        vitae esse id accusamus dignissimos neque reprehenderit
-                        natus, hic sequi itaque dicta nisi voluptatem! Culpa,
-                        iusto.
+                        The day i joined this company I was working in an MNC,
+                        where the company was paying me certain amount. But
+                        after joining corporX I abel to earn 10X then my
+                        previous corporet life.
                         <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                           "
                         </span>
@@ -151,11 +148,9 @@ const Testomonial = () => {
                         <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                           "
                         </span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nobis, voluptatem porro obcaecati dicta, quibusdam sunt
-                        ipsum, laboriosam nostrum facere exercitationem pariatur
-                        deserunt tempora molestiae assumenda nesciunt alias
-                        eius? Illo, autem!
+                        Market strategy is quite simple you just have to make
+                        your chain and grow with the flow. And when I bought the
+                        share of this company I made my dreams true.
                         <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                           "
                         </span>
@@ -178,8 +173,10 @@ const Testomonial = () => {
                         <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                           "
                         </span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatem iusto, explicabo, cupiditate quas totam!
+                        System is simple if you want to achive something in your
+                        life then you have to take risk. Although this
+                        opportunity is not for those who doesn't having dream of
+                        earning maximium grouth.
                         <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                           "
                         </span>

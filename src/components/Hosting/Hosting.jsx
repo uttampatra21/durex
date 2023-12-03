@@ -3,14 +3,14 @@ import { GiHidden } from "react-icons/gi";
 
 const Hosting = () => {
   return (
-    <div className="bg-white pb-10">
+    <div className="bg-white py-10">
       <div class="text-center flex flex-col items-center max-w-xl mx-auto">
         <h1 class="text-3xl md:text-7xl font-bold mb-5 text-gray-600">
-          Paid Partnership
+          Hosting Partner
         </h1>
         <h3 class="text-xl mb-5 font-light">
-          Top notch global trusted companies, Where we buy stocks &amp; trade in
-          market accrodingly.
+          We are in partnership with world's largest hosting platform. Grow your
+          business with netlify.
         </h3>
         <div class="text-center mb-10">
           <span class="inline-block w-1 h-1 rounded-full bg-green-500 ml-1"></span>

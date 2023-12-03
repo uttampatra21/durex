@@ -88,7 +88,14 @@ const Header = () => {
                 </NavLink>
               </li>
 
-              <li>
+              <li
+                onClick={() =>
+                  (storgeData = localStorage.setItem(
+                    "userXdata",
+                    JSON.stringify("")
+                  ))
+                }
+              >
                 <NavLink to="/login">
                   <a>
                     <button>Log Out</button>

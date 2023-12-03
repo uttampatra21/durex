@@ -18,11 +18,12 @@ const Home = () => {
       <Services />
       {/* TRADE PARTNER */}
       <Partner />
-      {/* HOSTING */}
-      <Hosting />
       {/* BEST QUALITY SERVICES */}
       <Bestqualityservices />
       {/* Our Latest News */}
+
+      {/* HOSTING */}
+      <Hosting />
       {/* TESTOMONIAL */}
       <Testomonial />
       {/* OUR TEAM */}

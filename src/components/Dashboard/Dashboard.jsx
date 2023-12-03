@@ -18,7 +18,6 @@ const Dashboard = () => {
 
   const pagiNation = () => {
     let filter = storgeData.reffer.slice(0, 3);
-    console.log(filter);
   };
   pagiNation();
 
