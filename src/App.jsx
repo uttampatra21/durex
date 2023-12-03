@@ -23,7 +23,7 @@ function App() {
           zIndex: "999",
         }}
       >
-        <a href="https://wa.me/8371934028">
+        <a href="https://wa.me/918371934028">
           <img
             width="70px"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"
