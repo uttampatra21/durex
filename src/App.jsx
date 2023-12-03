@@ -11,6 +11,7 @@ import TWithdraw from "./components/TWithdraw/TWithdraw";
 import Payment from "./components/Payment Us/Payment";
 import Activation from "./components/Activation/Activation";
 import Service from "./components/Service/Service";
+import Store from "./components/Store/Store";
 function App() {
   return (
     <div style={{ position: "relative" }}>
@@ -164,6 +165,15 @@ function App() {
               <Header />
               <Activation />
               <Footer />
+            </>
+          }
+        />
+
+        <Route
+          path="/store"
+          element={
+            <>
+              <Store />
             </>
           }
         />
