@@ -90,11 +90,11 @@ export const user = [
   },
 
   // -------------------------------- ORIGINAL USERS -------------------------------- //
-
   {
     id: "mousumi69",
     password: "mousumisarkar69",
     name: "Mousumi Sarkar",
+    joinDate: "12/4/23",
     reffer: [],
     taskIncome: 0,
     rffBalance: 0,

@@ -26,7 +26,7 @@ const Dashboard = () => {
   });
 
   const d = new Date();
-  let taskIncome = d.getHours() - 4;
+  let taskIncome = d.getHours() - 9;
   let time = d.getHours();
 
   return (

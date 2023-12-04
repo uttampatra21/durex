@@ -4,12 +4,7 @@ import { FcNeutralTrading } from "react-icons/fc";
 import { SiTemporal } from "react-icons/si";
 const Task = () => {
   const [loadingp, setLoading] = useState("none");
-  let dailyTaskVal = 0;
-  let newTaskVal = dailyTaskVal + 5;
-  let dailySumTask = dailyTaskVal + newTaskVal;
-
-  localStorage.setItem("dailySumTask", JSON.stringify(dailySumTask));
-
+  
   const taskOne = () => {
     setLoading("flex");
     setTimeout(() => {
