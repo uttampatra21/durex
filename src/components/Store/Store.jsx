@@ -62,7 +62,7 @@ const Store = () => {
               <br />
               The Trend Ss19
             </h1>
-            <button className="btn_item">SHOP NOW</button>
+            <button id="btn_item">SHOP NOW</button>
           </div>
           <div className="header__image">
             <img
@@ -82,7 +82,7 @@ const Store = () => {
           <h2 className="section__items__title">New Collection</h2>
           <p>#35 ITEMS</p>
           <h4>Available on Store</h4>
-          <button className="btn_item">SHOP NOW</button>
+          <button id="btn_item">SHOP NOW</button>
         </div>
       </div>
 
@@ -100,7 +100,7 @@ const Store = () => {
                 sale <span>40%</span> off
               </h4>
               <p className="sale__subtitle">- DON'T MISS -</p>
-              <button className="btn_item sale__btn_item">SHOP NOW</button>
+              <button id="btn_item" className="sale__btn_item my-2">SHOP NOW</button>
             </div>
           </div>
           <div className="sale__card">
@@ -114,7 +114,7 @@ const Store = () => {
                 sale <span>25%</span> off
               </h4>
               <p className="sale__subtitle">- DON'T MISS -</p>
-              <button className="btn_item sale__btn_item">SHOP NOW</button>
+              <button id="btn_item" className=" sale__btn_item my-2">SHOP NOW</button>
             </div>
           </div>
           <div className="sale__card">
@@ -128,7 +128,7 @@ const Store = () => {
                 sale <span>20%</span> off
               </h4>
               <p className="sale__subtitle">- DON'T MISS -</p>
-              <button className="btn_item sale__btn_item">SHOP NOW</button>
+              <button id="btn_item" className="sale__btn_item my-2">SHOP NOW</button>
             </div>
           </div>
         </div>
@@ -137,11 +137,11 @@ const Store = () => {
       <div className="section__items__container musthave__container">
         <h2 className="section__items__title">Must Have</h2>
         <div className="musthave__nav">
-          <a href="#">ALL</a>
-          <a href="#">MAN</a>
-          <a href="#">WOMEN</a>
-          <a href="#">BAG</a>
-          <a href="#">SHOES</a>
+          <div>ALL</div>
+          <div>MAN</div>
+          <div>WOMEN</div>
+          <div>BAG</div>
+          <div>SHOES</div>
         </div>
         <div className="musthave__grid">
           {storeData.map((x) => {
