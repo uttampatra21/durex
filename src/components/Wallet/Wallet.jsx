@@ -44,7 +44,7 @@ const Wallet = () => {
                     Refferal Income{" "}
                     <h1 className="flex items-start ">
                       <small>₹</small>
-                      {storgeData.reffer.length * 100}.99
+                      {storgeData.reffer.length * 200}.99
                     </h1>
                   </button>
                 </NavLink>
@@ -53,7 +53,7 @@ const Wallet = () => {
                   Refferal Income{" "}
                   <h1 className="flex items-start ">
                     <small>₹</small>
-                    {refferalincome}.99
+                    {storgeData.rffBalance}.99
                   </h1>
                 </button>
               )}

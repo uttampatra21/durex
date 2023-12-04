@@ -5,7 +5,7 @@ import HomeItem from "./HomeItem";
 import { CiSearch } from "react-icons/ci";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Store = () => {
   const storeData = useSelector((store) => store.AllStoreData);
   console.log(storeData);
@@ -100,7 +100,9 @@ const Store = () => {
                 sale <span>40%</span> off
               </h4>
               <p className="sale__subtitle">- DON'T MISS -</p>
-              <button id="btn_item" className="sale__btn_item my-2">SHOP NOW</button>
+              <button id="btn_item" className="sale__btn_item my-2">
+                SHOP NOW
+              </button>
             </div>
           </div>
           <div className="sale__card">
@@ -114,7 +116,9 @@ const Store = () => {
                 sale <span>25%</span> off
               </h4>
               <p className="sale__subtitle">- DON'T MISS -</p>
-              <button id="btn_item" className=" sale__btn_item my-2">SHOP NOW</button>
+              <button id="btn_item" className=" sale__btn_item my-2">
+                SHOP NOW
+              </button>
             </div>
           </div>
           <div className="sale__card">
@@ -128,7 +132,9 @@ const Store = () => {
                 sale <span>20%</span> off
               </h4>
               <p className="sale__subtitle">- DON'T MISS -</p>
-              <button id="btn_item" className="sale__btn_item my-2">SHOP NOW</button>
+              <button id="btn_item" className="sale__btn_item my-2">
+                SHOP NOW
+              </button>
             </div>
           </div>
         </div>
@@ -145,7 +151,12 @@ const Store = () => {
         </div>
         <div className="musthave__grid">
           {storeData.map((x) => {
-            return <HomeItem key={x.id} x={x} />;
+            return (
+              <Link to={`/product/${x.id}`}>
+                {" "}
+                <HomeItem key={x.id} x={x} />{" "}
+              </Link>
+            );
           })}
         </div>
       </div>

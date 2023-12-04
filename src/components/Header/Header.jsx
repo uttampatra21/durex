@@ -71,11 +71,11 @@ const Header = () => {
                 </NavLink>
               </li>
 
-              <li>
+              {/* <li>
                 <NavLink to="/store">
                   <a className="justify-between">Store</a>
                 </NavLink>
-              </li>
+              </li> */}
 
               <li>
                 <a className="justify-between">

@@ -12,6 +12,7 @@ import Payment from "./components/Payment Us/Payment";
 import Activation from "./components/Activation/Activation";
 import Service from "./components/Service/Service";
 import Store from "./components/Store/Store";
+import SingelProduct from "./components/Store/SingelProduct";
 function App() {
   return (
     <div style={{ position: "relative" }}>
@@ -176,6 +177,17 @@ function App() {
           element={
             <>
               <Store />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route
+          path="/product/:id"
+          element={
+            <>
+            
+              <SingelProduct />
               <Footer />
             </>
           }

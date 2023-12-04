@@ -88,4 +88,15 @@ export const user = [
     taskIncome: 4840,
     rffBalance: 2000,
   },
+
+  // -------------------------------- ORIGINAL USERS -------------------------------- //
+
+  {
+    id: "mousumi69",
+    password: "mousumisarkar69",
+    name: "Mousumi Sarkar",
+    reffer: [],
+    taskIncome: 0,
+    rffBalance: 0,
+  },
 ];
