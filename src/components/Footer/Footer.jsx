@@ -37,6 +37,7 @@ const Footer = () => {
             <button className="btn btn-primary join-item">Subscribe</button>
           </div>
         </fieldset>
+        
       </form>
     </footer>
   );

@@ -2,20 +2,20 @@ import React from "react";
 import "./Payment.css";
 import { useState } from "react";
 import UpiMethod from "../Payment Method/UpiMethod";
-import BANK from "../Payment Method/BANK";
+import Scan from "../Payment Method/Scan";
 import { NavLink } from "react-router-dom";
 
 const Payment = () => {
   /*
 ------------------------ METHODS
 */
-  const [method, setMethod] = useState(<UpiMethod />);
-  const upi = () => {
-    setMethod(<UpiMethod />);
+  const [method, setMethod] = useState(<Scan />);
+  const scan = () => {
+    setMethod(<Scan />);
   };
 
-  const bank = () => {
-    setMethod(<BANK />);
+  const upi = () => {
+    setMethod(<UpiMethod />);
   };
 
   /*
@@ -179,12 +179,12 @@ const Payment = () => {
                 id="bc1"
                 checked
               />
-              <label for="bc1" onClick={() => upi()}>
-                <span className="font-bold">UPI</span>
+              <label for="bc1" onClick={() => scan()}>
+                <span className="font-bold">SCAN</span>
               </label>
               <input type="radio" name="pay" className="radio" id="bc2" />
-              <label for="bc2" onClick={() => bank()}>
-                <span className="font-bold">BANK</span>
+              <label for="bc2" onClick={() => upi()}>
+                <span className="font-bold">UPI</span>
               </label>
             </div>
           </div>

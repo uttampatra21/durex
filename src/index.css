@@ -21,6 +21,10 @@ body {
   padding: 0px;
 }
 
+#qr {
+  display: flex;
+  justify-content: center;
+}
 @media only screen and (max-width: 800px) {
   #service-id {
     font-size: 32px;

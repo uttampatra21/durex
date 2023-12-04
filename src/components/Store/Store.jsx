@@ -14,7 +14,7 @@ const Store = () => {
       </div>
       <nav className="section__items__container nav__container">
         <a href="#" className="nav__logo">
-          Mon'sa
+          corporX
         </a>
         <ul className="nav__links">
           <li className="link">
@@ -49,7 +49,7 @@ const Store = () => {
       <header>
         <div className="section__items__container header__container">
           <div className="header__content">
-            <p>EXTRA 55% OFF IN SPRING SALE</p>
+            <p>EXTRA 55% OFF IN WINTER SALE</p>
             <h1>
               Discover & Shop
               <br />
@@ -122,11 +122,7 @@ const Store = () => {
       </div>
 
       <div className="section__items__container musthave__container">
-        <h2
-          className="section__items__title"
-        >
-          Must Have
-        </h2>
+        <h2 className="section__items__title">Must Have</h2>
         <div className="musthave__nav">
           <a href="#">ALL</a>
           <a href="#">MAN</a>
@@ -146,7 +142,10 @@ const Store = () => {
           <h2 className="section__items__title">Latest News</h2>
           <div className="news__grid">
             <div className="news__card">
-              <img src="https://cdn.sanity.io/images/qa41whrn/prod/576f2732d93aaae9bb5bd6fac1b52bfb89bfc546-2000x1334.png?w=2160&q=80&auto=format" alt="news" />
+              <img
+                src="https://cdn.sanity.io/images/qa41whrn/prod/576f2732d93aaae9bb5bd6fac1b52bfb89bfc546-2000x1334.png?w=2160&q=80&auto=format"
+                alt="news"
+              />
               <div className="news__details">
                 <p>
                   FASHION <i className="ri-checkbox-blank-circle-fill"></i>
@@ -166,7 +165,10 @@ const Store = () => {
               </div>
             </div>
             <div className="news__card">
-              <img src="https://github.com/WebDesignMastery/Monsa_12-05-23/blob/main/assets/news-2.jpg?raw=true" alt="news" />
+              <img
+                src="https://github.com/WebDesignMastery/Monsa_12-05-23/blob/main/assets/news-2.jpg?raw=true"
+                alt="news"
+              />
               <div className="news__details">
                 <p>
                   TRENDS <i className="ri-checkbox-blank-circle-fill"></i>
@@ -186,7 +188,10 @@ const Store = () => {
               </div>
             </div>
             <div className="news__card">
-              <img src="https://github.com/WebDesignMastery/Monsa_12-05-23/blob/main/assets/news-1.jpg?raw=true" alt="news" />
+              <img
+                src="https://github.com/WebDesignMastery/Monsa_12-05-23/blob/main/assets/news-1.jpg?raw=true"
+                alt="news"
+              />
               <div className="news__details">
                 <p>
                   STYLE <i className="ri-checkbox-blank-circle-fill"></i>
