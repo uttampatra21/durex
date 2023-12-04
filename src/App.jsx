@@ -176,6 +176,7 @@ function App() {
           element={
             <>
               <Store />
+              <Footer />
             </>
           }
         />

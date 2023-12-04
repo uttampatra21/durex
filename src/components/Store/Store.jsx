@@ -2,6 +2,10 @@ import React from "react";
 import "./Store.css";
 import { useSelector } from "react-redux";
 import HomeItem from "./HomeItem";
+import { CiSearch } from "react-icons/ci";
+import { IoBagHandleOutline } from "react-icons/io5";
+import { CiUser } from "react-icons/ci";
+import { NavLink } from "react-router-dom";
 const Store = () => {
   const storeData = useSelector((store) => store.AllStoreData);
   console.log(storeData);
@@ -9,8 +13,7 @@ const Store = () => {
   return (
     <div id="store">
       <div className="header__bar">
-        Free Shipping on Every Orders{" "}
-        <span classNameName="line-through">₹99</span>
+        Free Shipping & Free Delivery on Every Orders
       </div>
       <nav className="section__items__container nav__container">
         <a href="#" className="nav__logo">
@@ -35,13 +38,17 @@ const Store = () => {
         </ul>
         <div className="nav__icons">
           <span>
-            <i className="ri-shield-user-line"></i>
+            <NavLink to="/dashboard">
+              <CiUser />
+            </NavLink>
           </span>
           <span>
-            <i className="ri-search-line"></i>
+            <CiSearch />
           </span>
           <span>
-            <i className="ri-shopping-bag-2-line"></i>
+            <NavLink to="/bag">
+              <IoBagHandleOutline />
+            </NavLink>
           </span>
         </div>
       </nav>
@@ -58,13 +65,19 @@ const Store = () => {
             <button className="btn_item">SHOP NOW</button>
           </div>
           <div className="header__image">
-            <img src="" alt="header" />
+            <img
+              src="https://github.com/WebDesignMastery/Monsa_12-05-23/blob/main/assets/header.png?raw=true"
+              alt="header"
+            />
           </div>
         </div>
       </header>
 
       <div className="section__items__container collection__container">
-        <img src="assets/collection.jpg" alt="collection" />
+        <img
+          src="https://github.com/WebDesignMastery/Monsa_12-05-23/blob/main/assets/collection.jpg?raw=true"
+          alt="collection"
+        />
         <div className="collection__content">
           <h2 className="section__items__title">New Collection</h2>
           <p>#35 ITEMS</p>
@@ -215,22 +228,40 @@ const Store = () => {
 
       <div className="section__items__container brands__container">
         <div className="brand__image">
-          <img src="assets/brand-1.png" alt="brand" />
+          <img
+            src="https://github.com/WebDesignMastery/Monsa_12-05-23/blob/main/assets/brand-1.png?raw=true"
+            alt="brand"
+          />
         </div>
         <div className="brand__image">
-          <img src="assets/brand-2.png" alt="brand" />
+          <img
+            src="https://github.com/WebDesignMastery/Monsa_12-05-23/blob/main/assets/brand-2.png?raw=true"
+            alt="brand"
+          />
         </div>
         <div className="brand__image">
-          <img src="assets/brand-3.png" alt="brand" />
+          <img
+            src="https://github.com/WebDesignMastery/Monsa_12-05-23/blob/main/assets/brand-3.png?raw=true"
+            alt="brand"
+          />
         </div>
         <div className="brand__image">
-          <img src="assets/brand-4.png" alt="brand" />
+          <img
+            src="https://github.com/WebDesignMastery/Monsa_12-05-23/blob/main/assets/brand-4.png?raw=true"
+            alt="brand"
+          />
         </div>
         <div className="brand__image">
-          <img src="assets/brand-5.png" alt="brand" />
+          <img
+            src="https://github.com/WebDesignMastery/Monsa_12-05-23/blob/main/assets/brand-5.png?raw=true"
+            alt="brand"
+          />
         </div>
         <div className="brand__image">
-          <img src="assets/brand-6.png" alt="brand" />
+          <img
+            src="https://github.com/WebDesignMastery/Monsa_12-05-23/blob/main/assets/brand-6.png?raw=true"
+            alt="brand"
+          />
         </div>
       </div>
 
