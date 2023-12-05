@@ -96,7 +96,7 @@ export const user = [
     name: "Mousumi Sarkar",
     joinDate: "12/4/23",
     reffer: [],
-    taskIncome: 0,
+    taskIncome: 15,
     rffBalance: 0,
   },
 ];
