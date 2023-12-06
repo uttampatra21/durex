@@ -13,12 +13,12 @@ const Wallet = () => {
       <div id="wallet-nav" className="">
         <div className="flex" id="walet-cont">
           <div className="bg-img">
-            <img src="https://github.com/uttampatra21/public/raw/main/money.png" />
+            <img id="money-img" src="https://github.com/uttampatra21/public/raw/main/money.png" />
           </div>
 
           <div className="">
             <div className="flex flex-col justify-between gap-5 py-5">
-              {storgeData.taskIncome >= 500 ? (
+              {storgeData.taskIncome >= 200 ? (
                 <NavLink to="/tWithdraw">
                   <button className="btn w-full btn-outline btn-warning ">
                     Task Income{" "}
@@ -44,7 +44,7 @@ const Wallet = () => {
                     Refferal Income{" "}
                     <h1 className="flex items-start ">
                       <small>₹</small>
-                      {storgeData.reffer.length * 200}.99
+                      {storgeData.reffer.length * 100}.99
                     </h1>
                   </button>
                 </NavLink>

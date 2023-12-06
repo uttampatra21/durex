@@ -26,14 +26,13 @@ const Dashboard = () => {
   });
 
   const d = new Date();
-  let taskIncome = d.getHours() - 9;
-  let time = d.getHours();
+  let taskIncome = d.getHours() - 14;
 
   return (
     <>
       <div id="dashboard">
         <div className="content">
-          <main style={{ padding: "20px 0" }}>
+          <main id="dashboard-main" style={{ padding: "20px 0" }}>
             <div className="wrapper" style={{ backgroundColor: "transparent" }}>
               <h2 id="username">{storgeData.name}</h2>
             </div>
@@ -57,7 +56,7 @@ const Dashboard = () => {
               <li>
                 <i className="bx bx-show-alt"></i>
                 <span className="info">
-                  <h3>₹ {storgeData.reffer.length * 100},00</h3>
+                  <h3>₹ {storgeData.reffer.length * 75},00</h3>
                   <p>Referral Income</p>
                 </span>
               </li>
@@ -106,31 +105,6 @@ const Dashboard = () => {
                 <table>
                   <tbody>{data}</tbody>
                 </table>
-                <div
-                  id="pagination"
-                  className="flex justify-end items-center pt-5 w-full"
-                >
-                  <div className="join" id="reff-income">
-                    <input
-                      className="join-item btn btn-square"
-                      type="radio"
-                      name="options"
-                      aria-label="2"
-                    />
-                    <input
-                      className="join-item btn btn-square"
-                      type="radio"
-                      name="options"
-                      aria-label="3"
-                    />
-                    <input
-                      className="join-item btn btn-square"
-                      type="radio"
-                      name="options"
-                      aria-label="4"
-                    />
-                  </div>
-                </div>
               </div>
             </div>
           </main>

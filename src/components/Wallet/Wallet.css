@@ -78,6 +78,13 @@
   }
 }
 
+#walet-cont {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 #meth-ul {
   display: flex;
   flex-wrap: wrap;
@@ -85,22 +92,22 @@
   align-items: center;
   gap: 1rem;
 }
-  .payment-meth {
-    background-color: #fff;
-    border-radius: 10px;
-    height: 50px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
+.payment-meth {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
-  .payment-meth img {
-    width: 50px;
-    /* height: 40px; */
-  }
+.payment-meth img {
+  width: 50px;
+  /* height: 40px; */
+}
 /* 
 1. When the input is in the focus state
 reduce the size of the label and move upwards 
@@ -116,11 +123,14 @@ reduce the size of the label and move upwards
 }
 
 #wallet {
-  height: 100vh;
+  padding: 5vw;
   background-color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 #wallet-nav {
-  background-color: black;
   color: #fff;
 }
 
@@ -143,13 +153,17 @@ reduce the size of the label and move upwards
   text-align: center;
 }
 
+#money-img {
+  width: 150px;
+}
+
+
 @media only screen and (max-width: 800px) {
   .form {
     display: flex;
     flex-direction: column;
   }
   #walet-cont {
-    
     display: grid;
     grid-template-columns: 30% 70%;
     place-items: center;
@@ -167,6 +181,10 @@ reduce the size of the label and move upwards
   }
   .bg-img {
     padding: 25px;
+  }
+
+  #money-img {
+    width: 100%;
   }
 
   #wallet-nav {

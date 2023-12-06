@@ -3,7 +3,7 @@ import "./Header.css";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const storgeData =
+  let storgeData =
     localStorage.getItem("userXdata") != null
       ? JSON.parse(localStorage.getItem("userXdata"))
       : [];
