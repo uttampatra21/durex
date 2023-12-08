@@ -1,6 +1,5 @@
 import "./Wallet.css";
 import { NavLink } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
 
 const Wallet = () => {
   const storgeData =
@@ -13,12 +12,15 @@ const Wallet = () => {
       <div id="wallet-nav" className="">
         <div className="flex" id="walet-cont">
           <div className="bg-img">
-            <img id="money-img" src="https://github.com/uttampatra21/public/raw/main/money.png" />
+            <img
+              id="money-img"
+              src="https://github.com/uttampatra21/public/raw/main/money.png"
+            />
           </div>
 
           <div className="">
             <div className="flex flex-col justify-between gap-5 py-5">
-              {storgeData.taskIncome >= 200 ? (
+              {storgeData.taskIncome >= 300 ? (
                 <NavLink to="/tWithdraw">
                   <button className="btn w-full btn-outline btn-warning ">
                     Task Income{" "}
@@ -38,13 +40,13 @@ const Wallet = () => {
                 </button>
               )}
 
-              {storgeData.reffer.length * 100 >= 100 ? (
+              {storgeData.rffBalance >= 100 ? (
                 <NavLink to="/rWithdraw">
                   <button className="btn btn-outline btn-accent">
                     Refferal Income{" "}
                     <h1 className="flex items-start ">
                       <small>₹</small>
-                      {storgeData.reffer.length * 100}.99
+                      {storgeData.rffBalance}.99
                     </h1>
                   </button>
                 </NavLink>

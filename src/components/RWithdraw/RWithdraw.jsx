@@ -83,7 +83,6 @@ const RWithdraw = () => {
     );
   };
 
-  let n = 10;
   return (
     <div id="rwithdraw">
       <div id="wallet-nav" className="">
@@ -108,6 +107,7 @@ const RWithdraw = () => {
       <h1 className="text-center text-white py-5 font-bold opacity-80">
         CHOOSE PAYMENT METHOD
       </h1>
+
       <ul id="meth-ul">
         <li className="payment-meth" onClick={UPI}>
           <img src="https://www.mmaglobal.com/files/styles/member_logo_large/public/logos/phonepe_logo.png?itok=kQwv5E2X" />
@@ -125,10 +125,7 @@ const RWithdraw = () => {
           <img src="https://nuvei.com/wp-content/uploads/2021/06/regular-bank-transfer.png" />
         </li>
       </ul>
-
-      <div id="payment-detls" className="py-10">
-        {payment}
-      </div>
+      <div className="">{payment}</div>
     </div>
   );
 };

@@ -8,6 +8,7 @@ const TWithdraw = () => {
       : [];
 
   const [payment, setPayment] = useState();
+
   const UPI = () => {
     setPayment(
       <Payment
@@ -30,6 +31,7 @@ const TWithdraw = () => {
       />
     );
   };
+  
 
   const BANK = () => {
     setPayment(

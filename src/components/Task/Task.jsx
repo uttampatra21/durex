@@ -10,7 +10,7 @@ const Task = () => {
     setTimeout(() => {
       window.location.href =
         "https://accounts.binance.com/en/register?ref=788565756&gclid=CjwKCAiAmZGrBhAnEiwAo9qHiR5eFazFeeU3CP9Ssv2EmOTgEwWWojeMkN2YUfbTMgxsb91VedflERoCvlkQAvD_BwE";
-    }, 5000);
+    }, 10000);
     loading();
   };
 
@@ -18,7 +18,7 @@ const Task = () => {
     setLoading("flex");
     setTimeout(() => {
       window.location.href = "https://auth-x.crypto.com/users/sign_in";
-    }, 5000);
+    }, 10000);
     loading();
   };
 
@@ -26,7 +26,7 @@ const Task = () => {
     setLoading("flex");
     setTimeout(() => {
       window.location.href = "https://solana.com/";
-    }, 5000);
+    }, 10000);
     loading();
   };
 
@@ -34,7 +34,7 @@ const Task = () => {
     setLoading("flex");
     setTimeout(() => {
       window.location.href = "https://www.bitmex.com/";
-    }, 5000);
+    }, 10000);
     loading();
   };
 

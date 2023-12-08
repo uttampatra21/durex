@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Payment = ({
   minimum,
@@ -100,9 +101,11 @@ const Payment = ({
           {confirmaccount}
           {IFSC}
 
-          <button disabled className="form__button font-bold">
-            Withdraw
-          </button>
+          <NavLink to="/success">
+            <button disabled className="form__button font-bold">
+              Withdraw
+            </button>
+          </NavLink>
         </form>
       </div>
     </div>

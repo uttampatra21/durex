@@ -56,7 +56,7 @@ const Dashboard = () => {
               <li>
                 <i className="bx bx-show-alt"></i>
                 <span className="info">
-                  <h3>₹ {storgeData.reffer.length * 75},00</h3>
+                  <h3>₹ {storgeData.reffer.length * 100},00</h3>
                   <p>Referral Income</p>
                 </span>
               </li>
@@ -65,7 +65,7 @@ const Dashboard = () => {
                 <i className="bx bx-dollar-circle"></i>
                 <span className="info">
                   <h3>
-                    ₹ {storgeData.reffer.length * 100 + storgeData.taskIncome}
+                    ₹ {storgeData.totalIncome}
                     ,99
                   </h3>
                   <p>Total Income</p>

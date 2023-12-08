@@ -13,6 +13,7 @@ import Activation from "./components/Activation/Activation";
 import Service from "./components/Service/Service";
 import Store from "./components/Store/Store";
 import SingelProduct from "./components/Store/SingelProduct";
+import Success from "./components/Success/Success";
 function App() {
   return (
     <div style={{ position: "relative" }}>
@@ -110,6 +111,16 @@ function App() {
         />
 
         <Route
+          path="/success"
+          element={
+            <>
+              <Header />
+              <Success />
+            </>
+          }
+        />
+
+        <Route
           path="/tWithdraw"
           element={
             <>
@@ -186,7 +197,6 @@ function App() {
           path="/product/:id"
           element={
             <>
-            
               <SingelProduct />
               <Footer />
             </>
