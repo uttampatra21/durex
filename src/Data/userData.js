@@ -73,4 +73,5 @@ export const user = [
     rffBalance: 0,
     totalIncome: 10,
   },
+  
 ];

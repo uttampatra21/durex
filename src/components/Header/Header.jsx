@@ -87,6 +87,15 @@ const Header = () => {
               </li>
 
               <li>
+                <a className="justify-between">
+                  Gold
+                  <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-indigo-300">
+                    Upcoming
+                  </span>
+                </a>
+              </li>
+
+              <li>
                 <NavLink to="/services">
                   <a>
                     <button>Service</button>
@@ -127,6 +136,15 @@ const Header = () => {
                 <a className="justify-between">
                   Bitcoin
                   <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300">
+                    Upcoming
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a className="justify-between">
+                  Gold
+                  <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-indigo-300">
                     Upcoming
                   </span>
                 </a>
