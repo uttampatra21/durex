@@ -36,9 +36,9 @@ const Dashboard = () => {
             <div className="wrapper" style={{ backgroundColor: "transparent" }}>
               <h2 id="username">{storgeData.name}</h2>
             </div>
-            <p className="text-white text-center pt-5">
+            {/* <p className="text-white text-center pt-5">
               Please add users to withdrw wallet income.
-            </p>
+            </p> */}
             {/* <!-- Insights --> */}
             <ul className="insights">
               <li>
