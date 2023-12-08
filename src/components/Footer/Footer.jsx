@@ -37,7 +37,11 @@ const Footer = () => {
             <button className="btn btn-primary join-item">Subscribe</button>
           </div>
         </fieldset>
-        
+        <span className="label-text pt-10">
+          Launched :{" "}
+          <span style={{ color: "red", fontWeight: "500" }}>1 Nov 2023</span> <br /> ©corporX,
+          United States of America
+        </span>
       </form>
     </footer>
   );
