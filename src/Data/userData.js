@@ -61,8 +61,11 @@ export const user = [
     rffBalance: 600,
     totalIncome: 2160,
   },
+
   //! -------------------------------- ORIGINAL USERS -------------------------------- //
   //! -------------------------------- ORIGINAL USERS -------------------------------- //
+
+  
   {
     id: "MANASMAITY0929",
     password: "manasmaity012345",
@@ -73,5 +76,6 @@ export const user = [
     rffBalance: 0,
     totalIncome: 10,
   },
-  
+
+
 ];

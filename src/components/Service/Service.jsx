@@ -39,6 +39,17 @@ const Service = () => {
 
         <div className="chat chat-start">
           <div className="chat-bubble chat-bubble-warning font-bold ">
+            Benefits of Having a Referral Program
+          </div>
+        </div>
+        <div className="chat chat-end">
+          <div className="chat-bubble chat-bubble-success">
+            <img src="https://github.com/uttampatra21/public/blob/main/reffer-removebg-preview.png?raw=true" />
+          </div>
+        </div>
+
+        <div className="chat chat-start">
+          <div className="chat-bubble chat-bubble-warning font-bold ">
             How will I customize my maximum earning potential?
           </div>
         </div>
