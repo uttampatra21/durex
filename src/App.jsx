@@ -194,7 +194,7 @@ function App() {
         />
 
         <Route
-          path="/product/:id"
+          path="/products"
           element={
             <>
               <SingelProduct />

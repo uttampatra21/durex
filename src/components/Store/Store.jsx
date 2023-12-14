@@ -8,13 +8,13 @@ import { CiUser } from "react-icons/ci";
 import { Link, NavLink } from "react-router-dom";
 const Store = () => {
   const storeData = useSelector((store) => store.AllStoreData);
-  console.log(storeData);
 
   return (
     <div id="store">
       <div className="header__bar">
         Free Shipping & Free Delivery on Every Orders
       </div>
+
       <nav className="section__items__container nav__container">
         <a href="#" className="nav__logo">
           corporX
@@ -152,10 +152,15 @@ const Store = () => {
         <div className="musthave__grid">
           {storeData.map((x) => {
             return (
-              <Link to={`/product/${x.id}`}>
+              <NavLink
+                onClick={() =>
+                  localStorage.setItem("singelProduct", JSON.stringify(x.id))
+                }
+                to={`/products`}
+              >
                 {" "}
                 <HomeItem key={x.id} x={x} />{" "}
-              </Link>
+              </NavLink>
             );
           })}
         </div>

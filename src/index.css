@@ -4,12 +4,17 @@
 *::selection {
   user-select: none;
 }
+
+* {
+  text-decoration: none;
+}
 body {
   background-color: #1b2b4f;
   color: #000;
   height: 100%;
   transition: 0.5s;
   scroll-behavior: smooth;
+
 }
 
 .item-list {
