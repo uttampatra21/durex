@@ -29,11 +29,12 @@ const Service = () => {
         </div>
 
         <div className="chat chat-end">
-          <div className="chat-bubble chat-bubble-success">
+          <div className="chat-bubble chat-bubble-success relative">
             <img
               src="https://github.com/uttampatra21/public/raw/main/p3.jpg"
               alt=""
             />
+            <div className="whiteboard absolute text-7xl font-bold text-white">₹599</div>
           </div>
         </div>
 
