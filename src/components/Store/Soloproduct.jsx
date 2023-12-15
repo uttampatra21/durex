@@ -1,12 +1,28 @@
+/**
+ * The `Soloproduct` component is a React component that displays a single product and allows the user
+ * to add it to their shopping bag.
+ * @returns The Soloproduct component is returning JSX elements that make up the UI of a single product
+ * page.
+ */
 import React from "react";
 import { useSelector } from "react-redux";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { bagAction } from "../../redux/slice/Bagslice";
 
 const Soloproduct = () => {
+
+/* The code is retrieving the value of the "singelProduct" key from the localStorage object. If the
+value is not null, it is parsed from a string to a JavaScript object using JSON.parse(). If the
+value is null, an empty array is assigned to the `singelProduct` variable. */
+
   const singelProduct =
     localStorage.getItem("singelProduct") != null
       ? JSON.parse(localStorage.getItem("singelProduct"))
       : [];
+
+      
+
   const storeData = useSelector((store) => store.AllStoreData);
 
   const data = storeData.filter((x) => x.id == singelProduct);
@@ -17,6 +33,12 @@ const Soloproduct = () => {
     return x.images;
   });
 
+  const dispatch = useDispatch();
+
+  const AddToBag = () => {
+    dispatch(bagAction.addToBag(singelProduct));
+    console.log(data);
+  };
 
   return (
     <div>
@@ -41,12 +63,14 @@ const Soloproduct = () => {
 
         <div className="left-cont">
           <div className="">
-            <h1 className="text-2xl font-medium">{data.map ((x) => x.title)}</h1>
+            <h1 className="text-2xl font-medium">{data.map((x) => x.title)}</h1>
             <h3 className="text-xl font-medium">
               Men's Fleece Full-Zip Fitness Hoodie
             </h3>
           </div>
-          <div className="mrp text-xl font-medium">MRP : ₹ {data.map((x)=> x.discountPrice)}.00</div>
+          <div className="mrp text-xl font-medium">
+            MRP : ₹ {data.map((x) => x.discountPrice)}.00
+          </div>
           <div className="">
             <div className="opacity-60">incl. of taxes</div>
             <div className="opacity-60">
@@ -87,7 +111,9 @@ const Soloproduct = () => {
           </div>
 
           <div className="shopping-buttons flex flex-col gap-5">
-            <button className="add-to--bag">Add to Bag</button>
+            <button className="add-to--bag" onClick={AddToBag}>
+              Add to Bag
+            </button>
             <button className="add-to--favo">Favourite</button>
           </div>
 
@@ -101,14 +127,13 @@ const Soloproduct = () => {
           </div>
 
           <div className=" px-6 py-2">
-            <p>
-              {data.map((x)=> x.description)}
-            </p>
+            <p>{data.map((x) => x.description)}</p>
           </div>
 
           <div className=" px-6 py-2">
             <p>
-              Embrace the grind of your next workout in this Nike {data.map((x)=> x.title)}
+              Embrace the grind of your next workout in this Nike{" "}
+              {data.map((x) => x.title)}
               Hoodie. Nike Dri-FIT technology moves sweat away from your skin
               for quicker evaporation, helping you stay dry and comfortable. The
               relaxed fit sits slightly off the body and the "Engineered for

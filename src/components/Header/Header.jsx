@@ -71,11 +71,11 @@ const Header = () => {
                 </NavLink>
               </li>
 
-              {/* <li>
+              <li>
                 <NavLink to="/store">
                   <a className="justify-between">Store</a>
                 </NavLink>
-              </li> */}
+              </li>
 
               <li>
                 <a className="justify-between">
@@ -124,12 +124,14 @@ const Header = () => {
               className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content base-background rounded-box w-52"
             >
               <li>
-                <a className="justify-between">
-                  Store
-                  <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300">
-                    Upcoming
-                  </span>
-                </a>
+                <NavLink to="/store">
+                  <a className="justify-between">
+                    Store
+                    <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300">
+                      New
+                    </span>
+                  </a>
+                </NavLink>
               </li>
 
               <li>

@@ -44,7 +44,7 @@ const Service = () => {
         </div>
         <div className="chat chat-end">
           <div className="chat-bubble chat-bubble-success">
-            <img src="https://github.com/uttampatra21/public/blob/main/reffer-removebg-preview.png?raw=true" />
+            <img src="https://github.com/uttampatra21/public/blob/main/159300017_3658779087510774_2235209905233737226_n.png?raw=true" />
           </div>
         </div>
 

@@ -14,6 +14,7 @@ import Service from "./components/Service/Service";
 import Store from "./components/Store/Store";
 import SingelProduct from "./components/Store/SingelProduct";
 import Success from "./components/Success/Success";
+import Bag from "./components/Store/Bag";
 function App() {
   return (
     <div style={{ position: "relative" }}>
@@ -198,6 +199,15 @@ function App() {
           element={
             <>
               <SingelProduct />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/bag"
+          element={
+            <>
+              <Bag />
               <Footer />
             </>
           }

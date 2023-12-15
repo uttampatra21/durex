@@ -6,6 +6,7 @@ import { CiSearch } from "react-icons/ci";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 import { Link, NavLink } from "react-router-dom";
+import StoreHeader from "./StoreHeader";
 const Store = () => {
   const storeData = useSelector((store) => store.AllStoreData);
 
@@ -15,44 +16,7 @@ const Store = () => {
         Free Shipping & Free Delivery on Every Orders
       </div>
 
-      <nav className="section__items__container nav__container">
-        <a href="#" className="nav__logo">
-          corporX
-        </a>
-        <ul className="nav__links">
-          <li className="link">
-            <a href="#">HOME</a>
-          </li>
-          <li className="link">
-            <a href="#">SHOP</a>
-          </li>
-          <li className="link">
-            <a href="#">PAGES</a>
-          </li>
-          <li className="link">
-            <a href="#">BLOG</a>
-          </li>
-          <li className="link">
-            <a href="#">LOOKBOOK</a>
-          </li>
-        </ul>
-        <div className="nav__icons">
-          <span>
-            <NavLink to="/dashboard">
-              <CiUser />
-            </NavLink>
-          </span>
-          <span>
-            <CiSearch />
-          </span>
-          <span>
-            <NavLink to="/bag">
-              <IoBagHandleOutline />
-            </NavLink>
-          </span>
-        </div>
-      </nav>
-
+      <StoreHeader />
       <header>
         <div className="section__items__container header__container">
           <div className="header__content">
