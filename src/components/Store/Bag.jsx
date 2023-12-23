@@ -1,19 +1,17 @@
 import React from "react";
-import Sliders from "./Slider";
 import StoreHeader from "./StoreHeader";
 import { useSelector } from "react-redux";
 
 const Bag = () => {
-  const singelProduct =
-    localStorage.getItem("bagItems") != null
-      ? JSON.parse(localStorage.getItem("singelProduct"))
-      : [];
-  const storeData = useSelector((store) => store.AllStoreData);
-  console.log(storeData);
-  const data = storeData.filter((x) => x.id == singelProduct);
-  console.log(data);
+  // const sing =
+  //   localStorage.getItem("bagItems") != null
+  //     ? JSON.parse(localStorage.getItem("bagItems"))
+  //     : [];
 
-  
+  const item = localStorage.getItem("bagItems");
+  console.log(item);
+  const storeData = useSelector((store) => store.AllStoreData);
+  // let data = storeData.filter((x) => x.id !== item);
 
   return (
     <div className="bg-white">

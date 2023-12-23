@@ -125,12 +125,7 @@ const Header = () => {
             >
               <li>
                 <NavLink to="/store">
-                  <a className="justify-between">
-                    Store
-                    <span className="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300">
-                      New
-                    </span>
-                  </a>
+                  <a className="justify-between">Store</a>
                 </NavLink>
               </li>
 

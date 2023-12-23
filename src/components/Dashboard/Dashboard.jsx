@@ -28,6 +28,12 @@ const Dashboard = () => {
   const d = new Date();
   let taskIncome = d.getHours() - 14;
 
+  // let taskBal = 0;
+  // setInterval(() => {
+  //   console.log((taskBal += 10));
+  //   localStorage.setItem('taskBalance', taskBal)
+  // }, 1000);
+
   return (
     <>
       <div id="dashboard">
@@ -36,7 +42,7 @@ const Dashboard = () => {
             <div className="wrapper" style={{ backgroundColor: "transparent" }}>
               <h2 id="username">{storgeData.name}</h2>
             </div>
-            
+
             {/* <!-- Insights --> */}
             <ul className="insights">
               <li>
@@ -66,7 +72,7 @@ const Dashboard = () => {
                 <i className="bx bx-dollar-circle"></i>
                 <span className="info">
                   <h3>
-                    ₹ {storgeData.totalIncome}
+                    ₹ {storgeData.taskIncome+storgeData.rffBalance}
                     ,99
                   </h3>
                   <p>Total Income</p>

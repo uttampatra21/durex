@@ -7,7 +7,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Sliders = () => {
   const storeData = useSelector((store) => store.AllStoreData);
-  storeData.map((x) => console.log(x.title));
+
   const settings = {
     dots: true,
     infinite: true,
