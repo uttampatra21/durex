@@ -23,13 +23,7 @@ const Sliders = () => {
           <Slider {...settings}>
             {storeData.map((x) => {
               return (
-                <Link
-                  onClick={() => {
-                    localStorage.setItem("singelProduct", JSON.stringify(x.id));
-                    location.reload();
-                  }}
-                  to="/products"
-                >
+                <Link key={Math.random()} to={"/products/" + x.id}>
                   <div className="bg-white text-black rounded-xl">
                     <div className=" flex justify-center">
                       <img

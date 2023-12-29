@@ -34,7 +34,7 @@ const Service = () => {
               src="https://github.com/uttampatra21/public/raw/main/p3.jpg"
               alt=""
             />
-            <div className="whiteboard absolute text-7xl font-bold text-white">₹159</div>
+            <div className="whiteboard absolute text-8xl font-bold text-white">₹599</div>
           </div>
         </div>
 
@@ -45,7 +45,7 @@ const Service = () => {
         </div>
         <div className="chat chat-end">
           <div className="chat-bubble chat-bubble-success">
-            <img src="https://cdn0.desidime.com/topics/photos/1276319/original/freecoinbanner.svg?1617694643" />
+            <img src="https://github.com/uttampatra21/public/blob/main/159300017_3658779087510774_2235209905233737226_n.png?raw=true" />
           </div>
         </div>
 

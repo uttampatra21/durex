@@ -116,12 +116,7 @@ const Store = () => {
         <div className="musthave__grid">
           {storeData.map((x) => {
             return (
-              <NavLink
-                onClick={() =>
-                  localStorage.setItem("singelProduct", JSON.stringify(x.id))
-                }
-                to={`/products`}
-              >
+              <NavLink to={"/products/" + x.id}>
                 {" "}
                 <HomeItem key={x.id} x={x} />{" "}
               </NavLink>

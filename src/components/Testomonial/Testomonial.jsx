@@ -30,11 +30,11 @@ const Testomonial = () => {
                   <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                     <div className="w-full flex mb-4 items-center">
                       <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                        <img src="https://i.pravatar.cc/100?img=1" alt="" />
+                        <img src="https://www.healthkart.com/connect/wp-content/uploads/2023/07/average-height-in-men-in-india_900.jpg" alt="" />
                       </div>
                       <div className="flex-grow pl-3">
                         <h6 className="font-bold text-sm uppercase text-gray-600">
-                          Kenzie Edgar.
+                          Prakash Mehata
                         </h6>
                       </div>
                     </div>
@@ -54,11 +54,11 @@ const Testomonial = () => {
                   <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                     <div className="w-full flex mb-4 items-center">
                       <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                        <img src="https://i.pravatar.cc/100?img=2" alt="" />
+                        <img src="https://media.istockphoto.com/id/1136413215/photo/young-man-at-street-market.webp?b=1&s=170667a&w=0&k=20&c=lQxEqo4oY2z9-yUVMFdsJPYpMNRgOhi8-sFCz8Wt-cg=" alt="" />
                       </div>
                       <div className="flex-grow pl-3">
                         <h6 className="font-bold text-sm uppercase text-gray-600">
-                          Stevie Tifft.
+                          Satyam Deshpandey
                         </h6>
                       </div>
                     </div>
@@ -81,11 +81,11 @@ const Testomonial = () => {
                   <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                     <div className="w-full flex mb-4 items-center">
                       <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                        <img src="https://i.pravatar.cc/100?img=3" alt="" />
+                        <img src="https://media.istockphoto.com/id/1299818579/photo/young-boy-indian-student-portrait.jpg?s=612x612&w=0&k=20&c=1flR4Z2RhihY7MvmHCiLBMJlaQtoanjdmBwFwen4Dwc=" alt="" />
                       </div>
                       <div className="flex-grow pl-3">
                         <h6 className="font-bold text-sm uppercase text-gray-600">
-                          Tommie Ewart.
+                          Rajeeb Das
                         </h6>
                       </div>
                     </div>
@@ -107,11 +107,11 @@ const Testomonial = () => {
                   <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                     <div className="w-full flex mb-4 items-center">
                       <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                        <img src="https://i.pravatar.cc/100?img=4" alt="" />
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/028/287/529/small/indian-man-with-crossed-arms-wearing-a-formal-shirt-ai-generated-photo.jpg" alt="" />
                       </div>
                       <div className="flex-grow pl-3">
                         <h6 className="font-bold text-sm uppercase text-gray-600">
-                          Charlie Howse.
+                          Mahesh Choudhary
                         </h6>
                       </div>
                     </div>
@@ -135,11 +135,11 @@ const Testomonial = () => {
                   <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                     <div className="w-full flex mb-4 items-center">
                       <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                        <img src="https://i.pravatar.cc/100?img=5" alt="" />
+                        <img src="https://t3.ftcdn.net/jpg/03/96/78/06/360_F_396780640_mO95sH5ITG2sD3RdOd7fh3olapEkupXW.jpg" alt="" />
                       </div>
                       <div className="flex-grow pl-3">
                         <h6 className="font-bold text-sm uppercase text-gray-600">
-                          Nevada Herbertson.
+                          Rakesh Deshpandey
                         </h6>
                       </div>
                     </div>
@@ -160,11 +160,11 @@ const Testomonial = () => {
                   <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                     <div className="w-full flex mb-4 items-center">
                       <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                        <img src="https://i.pravatar.cc/100?img=6" alt="" />
+                        <img src="https://img.freepik.com/premium-photo/cheerful-middle-aged-indian-man_459244-118.jpg" alt="" />
                       </div>
                       <div className="flex-grow pl-3">
                         <h6 className="font-bold text-sm uppercase text-gray-600">
-                          Kris Stanton.
+                          Bikash Mehata
                         </h6>
                       </div>
                     </div>

@@ -4,9 +4,7 @@ import { IoBagHandleOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 const StoreHeader = () => {
-  const bag = useSelector((state) => state.bag);
-
-  console.log();
+  const bagItem = useSelector((store) => store.bag);
 
   return (
     <div className="bg-white">
@@ -44,7 +42,7 @@ const StoreHeader = () => {
             <NavLink to="/bag" className="relative">
               <IoBagHandleOutline />
               <small className="absolute bottom-[10px] h-5 w-5 flex items-center justify-center p-1 bg-green-500 rounded-full left-[19px] text-white">
-                {bag.length}
+                {bagItem.length}
               </small>
             </NavLink>
           </span>
